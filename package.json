@@ -1,0 +1,13 @@
+{
+  "name": "sudoku-solver-engine",
+  "version": "1.0.0",
+  "description": "Sudoku solver engine",
+  "main": "index.js",
+  "repository": "https://github.com/letItCurl/sudoku-solver-engine",
+  "author": "rollpz <rolandlopez.developer@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "underscore": "^1.9.2"
+  }
+}
