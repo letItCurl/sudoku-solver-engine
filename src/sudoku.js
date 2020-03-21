@@ -60,4 +60,26 @@ function Sudoku(sudoku){
         }
         return col
     }
+    this.getArea = function(x,y){
+        var area = []
+        for (let scanX = 0; scanX < 9; scanX++) {
+            for (let scanY = 0; scanY < 9; scanY++) {
+                if(scanX<3 && scanY<3){
+                    area.push(this.sudoku[x][y])
+                }
+                /*
+                if(){}
+                if(){}
+                if(){}
+                if(){}
+                if(){}
+                if(){}
+                if(){}
+                if(){}*/
+            }
+        }
+    }
 }
+const mySudok = new Sudoku(data.sudoku)
+
+mySudok.getArea(1,1)
