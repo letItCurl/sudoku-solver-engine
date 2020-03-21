@@ -1,11 +1,13 @@
 const data = require('./sudokuData')
 const colors = require('colors')
 
-function Sudoku(sudoku){
-    
-    this.sudoku = sudoku
+class Sudoku{
 
-    this.displaySudoku = function(){
+    constructor(sudoku){
+        this.sudoku = sudoku
+    }
+
+    displaySudoku = function(){
     console.log("All sudoku".red.bold)
     console.log("+-----------+".red.bold)
     for (let x = 0; x < 9; x++) {
@@ -22,11 +24,11 @@ function Sudoku(sudoku){
     console.log("+-----------+".red.bold)
     }
 
-    this.displayRow = function(x){
+    displayRow = function(x){
         console.log(`row@${x}:`.red.bold)
         console.log(`${this.sudoku[x].join().replace(/,/g," ").yellow}`)
     }
-    this.displayCol = function(y){
+    displayCol = function(y){
         console.log(`col@${y}: `.red.bold)
         for (let x = 0; x < 9; x++) {
             if(x===0){
@@ -36,7 +38,7 @@ function Sudoku(sudoku){
             }
         }
     }
-    this.displayCross = function(x,y){
+    displayCross = function(x,y){
         var space = ""
         console.log(`cross@${x},${y}: `.red.bold)
         for(let i = 0; i < y; i++){
@@ -50,17 +52,17 @@ function Sudoku(sudoku){
             }
         }
     }
-    this.getRow = function(x){
+    getRow = function(x){
         return this.sudoku[x]
     }
-    this.getCol = function(y){
+    getCol = function(y){
         var col = []
         for (let x = 0; x < 9; x++) {
             col.push(this.sudoku[x][y])
         }
         return col
     }
-    this.getArea = function(x,y){
+    getArea = function(x,y){
         var area = []
         if((x>=0&&x<3)){
             if(y>=0&&y<3){
@@ -133,9 +135,9 @@ function Sudoku(sudoku){
             }
         }
     }
+    set setPos(params){
+        this.sudoku[params[0]][params[1]] = params[2]
+    }
 }
-const mySudok = new Sudoku(data.sudoku)
 
-mySudok.displaySudoku()
-
-console.log(mySudok.getArea(6,6))
+module.exports = Sudoku
