@@ -23,11 +23,11 @@ function Sudoku(sudoku){
     }
 
     this.displayRow = function(x){
-        console.log(`row@${x+1}:`.red.bold)
+        console.log(`row@${x}:`.red.bold)
         console.log(`${this.sudoku[x].join().replace(/,/g," ").yellow}`)
     }
     this.displayCol = function(y){
-        console.log(`col@${y+1}: `.red.bold)
+        console.log(`col@${y}: `.red.bold)
         for (let x = 0; x < 9; x++) {
             if(x===0){
                 console.log(`${this.sudoku[x][y]}`.yellow)
@@ -62,24 +62,80 @@ function Sudoku(sudoku){
     }
     this.getArea = function(x,y){
         var area = []
-        for (let scanX = 0; scanX < 9; scanX++) {
-            for (let scanY = 0; scanY < 9; scanY++) {
-                if(scanX<3 && scanY<3){
-                    area.push(this.sudoku[x][y])
+        if((x>=0&&x<3)){
+            if(y>=0&&y<3){
+                for(let i = 0; (i>=0&&i<3) ;i++){
+                    for(let j = 0; (j>=0&&j<3) ;j++){
+                        area.push(this.sudoku[i][j])
+                    }
                 }
-                /*
-                if(){}
-                if(){}
-                if(){}
-                if(){}
-                if(){}
-                if(){}
-                if(){}
-                if(){}*/
+                return area
+            }else if(y>=3&&y<6){
+                for(let i = 0; (i>=0&&i<3) ;i++){
+                    for(let j = 3; (j>=3&&j<6) ;j++){
+                        area.push(this.sudoku[j][i])
+                    }
+                }
+                return area
+            }else{
+                for(let i = 0; (i>=0&&i<3) ;i++){
+                    for(let j = 6; (j>=6&&j<9) ;j++){
+                        area.push(this.sudoku[j][i])
+                    }
+                }
+                return area
+            }
+        }if((x>=3&&x<6)){
+            if(y>=0&&y<3){
+                for(let i = 3; (i>=3&&i<6) ;i++){
+                    for(let j = 0; (j>=0&&j<3) ;j++){
+                        area.push(this.sudoku[j][i])
+                    }
+                }
+                return area
+            }else if(y>=3&&y<6){
+                for(let i = 3; (i>=3&&i<6) ;i++){
+                    for(let j = 3; (j>=3&&j<6) ;j++){
+                        area.push(this.sudoku[j][i])
+                    }
+                }
+                return area
+            }else{
+                for(let i = 3; (i>=3&&i<6) ;i++){
+                    for(let j = 6; (j>=6&&j<9) ;j++){
+                        area.push(this.sudoku[j][i])
+                    }
+                }
+                return area
+            }
+        }if((x>=6&&x<9)){
+            if(y>=0&&y<3){
+                for(let i = 6; (i>=6&&i<9) ;i++){
+                    for(let j = 0; (j>=0&&j<3) ;j++){
+                        area.push(this.sudoku[j][i])
+                    }
+                }
+                return area
+            }else if(y>=3&&y<6){
+                for(let i = 6; (i>=6&&i<9) ;i++){
+                    for(let j = 3; (j>=3&&j<6) ;j++){
+                        area.push(this.sudoku[j][i])
+                    }
+                }
+                return area
+            }else{
+                for(let i = 6; (i>=6&&i<9) ;i++){
+                    for(let j = 6; (j>=6&&j<9) ;j++){
+                        area.push(this.sudoku[j][i])
+                    }
+                }
+                return area
             }
         }
     }
 }
 const mySudok = new Sudoku(data.sudoku)
 
-mySudok.getArea(1,1)
+mySudok.displaySudoku()
+
+console.log(mySudok.getArea(6,6))
