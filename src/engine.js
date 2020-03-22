@@ -52,16 +52,17 @@ const solveN = function(originalSudoku, n){
         }
     })
     
-    originalSudoku.displayGrid("final mod")
+    originalSudoku.displayGrid("final grid for "+n)
     return (count === 0) ? true : false
 }
 
-const findAllN = (n) =>{
+const findAllN = (sudoku, n, numbers) =>{
     //n goes from 1 to 9
+    console.log(`--- COUNTING ${n} ---`)
     for(let scanX = 0; scanX<9 ; scanX++){
         for(let scanY = 0; scanY<9 ; scanY++){
-            if(mySudok.grid[scanY][scanX]===n){
-                console.log(n+" finded".red)
+            if(sudoku.grid[scanY][scanX]===n){
+                console.log(n+" finded".green)
                 numbers[n-1].pop()
             }
         }
@@ -77,24 +78,40 @@ const showRemaining = (numbers)=>{
         console.log("--- end ---")
     })
 }
-const testRemaining = (numbers)=>{
+const stopCondition = (numbers)=>{
     numbers = numbers.filter((val)=>{return val.length})
-    return (numbers.length) ? false : true
+    return (numbers.length) ? true : false
 }
 
-/*
-while(numbers.length){
-    numbers.forEach((num)=>{
-        if(!solveN(mySudok, num)){
-            while(!solveN(mySudok, num)){
-
+const solveAll = function(sudoku,numbers){
+    var run = 0
+    console.log("STARTING THE LOOP".rainbow)
+    console.log(stopCondition(numbers))
+    while(stopCondition(numbers)){
+        console.log(`RUN NB:${run}`.bgMagenta)
+        numbers.forEach((element,index) =>{
+            while(!solveN(sudoku, index+1)){
+                solveN(sudoku, index+1)
             }
-        }
-        
-    })
+        })
+        numbers.forEach((element,index) =>{
+            findAllN(sudoku, index+1, numbers)
+        })
+        run ++
+    }
+    console.log(numbers)
+    console.log(`Nb of Runs: ${run}`)
+    console.log("~~~~ DONE! ~~~~".rainbow)
+}
 
- }
-*/
+
+
+
+numbersInit()
+mySudok.displayGrid("Initial sudoku")
+solveAll(mySudok, numbers)
+mySudok.displayGrid("Finished sudoku")
+
 
 
 
