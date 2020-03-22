@@ -1,34 +1,29 @@
 const { testCol, testRow, testArea } = require('./rules');
-const ToolBox = require('./toolBox')
-
-const {grid} = require('./sudokuData')
-const Sudoku = require('./sudoku')
-
-const myTooBox = new ToolBox()
-
-Sudoku.prototype.testCol = testCol
-Sudoku.prototype.testRow = testRow
-Sudoku.prototype.testArea = testArea
+const _ = require('underscore')
+//small example of how we can add function to a class
+//Sudoku.prototype.testCol = testCol
+//Sudoku.prototype.testRow = testRow
+//Sudoku.prototype.testArea = testArea
 
 //mySudok.tools = getRowFromToolBox.bind(mySudok); for mod one object
 
+const ToolBox = require('./toolBox')
+const {grid} = require('./sudokuData2')
+const Sudoku = require('./sudoku')
+
+const myTooBox = new ToolBox()
 const mySudok = new Sudoku(grid)
-
 var numbers = []
-
+var store = []
 const numbersInit = ()=>{
     for(let i = 1; i<10 ; i++){
         numbers[i]=[i,i,i,i,i,i,i,i,i]
     }
     numbers.shift()
-    //console.log("initial conditions builded as:")
-    //console.log(numbers.join().bgMagenta)
 }
-
 numbersInit()
-
-var n = 9
 var centers = [[1,1],[4,1],[7,1],[1,4],[4,4],[7,4],[1,7],[4,7],[7,7]]
+
 
 const solveN = function(originalSudoku, n){
     var count = 0
@@ -56,14 +51,26 @@ const solveN = function(originalSudoku, n){
     return (count === 0) ? true : false
 }
 
-const findAllN = (sudoku, n, numbers) =>{
+const testPos = function(arr, i, j){
+    for(let scanX = 0; scanX<store.length ; scanX++){
+        if(arr[scanX][0]===i && arr[scanX][1]===j){
+            return true
+        }
+    }
+}
+
+const findAllNAndPop = (sudoku, n, numbers) =>{
     //n goes from 1 to 9
     console.log(`--- COUNTING ${n} ---`)
     for(let scanX = 0; scanX<9 ; scanX++){
         for(let scanY = 0; scanY<9 ; scanY++){
             if(sudoku.grid[scanY][scanX]===n){
                 console.log(n+" finded".green)
-                numbers[n-1].pop()
+
+                if(!testPos(store,scanY,scanX)){
+                    store.push([scanY,scanX])
+                    numbers[n-1].pop()
+                } 
             }
         }
     }
@@ -95,7 +102,7 @@ const solveAll = function(sudoku,numbers){
             }
         })
         numbers.forEach((element,index) =>{
-            findAllN(sudoku, index+1, numbers)
+            findAllNAndPop(sudoku, index+1, numbers)
         })
         run ++
     }
@@ -107,12 +114,9 @@ const solveAll = function(sudoku,numbers){
 
 
 
-numbersInit()
 mySudok.displayGrid("Initial sudoku")
 solveAll(mySudok, numbers)
 mySudok.displayGrid("Finished sudoku")
-
-
-
+console.log(store)
 
 

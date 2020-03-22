@@ -1,0 +1,3344 @@
+Initial sudoku
++-----------+
+|607|900|203|
+|903|420|860|
+|000|083|001|
+|-----------|
+|530|060|902|
+|000|000|037|
+|400|132|500|
+|-----------|
+|040|070|609|
+|720|000|000|
+|891|250|070|
++-----------+
+STARTING THE LOOP
+true
+RUN NB:0
+initial number: 1
++-----------+
+|607|900|203|
+|903|420|860|
+|000|083|001|
+|-----------|
+|530|060|902|
+|000|000|037|
+|400|132|500|
+|-----------|
+|040|070|609|
+|720|000|000|
+|891|250|070|
++-----------+
+hided number: 1
++-----------+
+|60x|x00|20x|
+|90x|x20|86x|
+|xxx|xxx|xx#|
+|-----------|
+|53x|x60|90x|
+|00x|x00|03x|
+|xxx|#xx|xxx|
+|-----------|
+|04x|x70|60x|
+|72x|x00|00x|
+|xx#|xxx|xxx|
++-----------+
+No replacement possible @area: 1,1
+No replacement possible @area: 4,1
+No replacement possible @area: 7,1
+No replacement possible @area: 1,4
+No replacement possible @area: 4,4
+No replacement possible @area: 7,4
+No replacement possible @area: 1,7
+No replacement possible @area: 4,7
+No replacement possible @area: 7,7
+final grid for 1
++-----------+
+|607|900|203|
+|903|420|860|
+|000|083|001|
+|-----------|
+|530|060|902|
+|000|000|037|
+|400|132|500|
+|-----------|
+|040|070|609|
+|720|000|000|
+|891|250|070|
++-----------+
+initial number: 2
++-----------+
+|607|900|203|
+|903|420|860|
+|000|083|001|
+|-----------|
+|530|060|902|
+|000|000|037|
+|400|132|500|
+|-----------|
+|040|070|609|
+|720|000|000|
+|891|250|070|
++-----------+
+hided number: 2
++-----------+
+|xxx|xxx|#xx|
+|xxx|x#x|xxx|
+|0x0|xxx|x0x|
+|-----------|
+|xxx|xxx|xx#|
+|0x0|xxx|x3x|
+|xxx|xx#|xxx|
+|-----------|
+|0x0|xxx|x0x|
+|x#x|xxx|xxx|
+|xxx|#xx|xxx|
++-----------+
+No replacement possible @area: 1,1
+No replacement possible @area: 4,1
+No replacement possible @area: 7,1
+No replacement possible @area: 1,4
+No replacement possible @area: 4,4
+No replacement possible @area: 7,4
+No replacement possible @area: 1,7
+No replacement possible @area: 4,7
+we can replace here!7,7
+--- START REPLACEMENT FOR:2 @center:7,7 ---
+Here is the area:
+[
+  'x', 'x', 'x', 0,
+  'x', 'x', 'x', 'x',
+  'x'
+]
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+REPLACEMENT @: 7 6
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+--- END REPLACEMENT FOR:2 @center:7,7 ---
+final grid for 2
++-----------+
+|607|900|203|
+|903|420|860|
+|000|083|001|
+|-----------|
+|530|060|902|
+|000|000|037|
+|400|132|500|
+|-----------|
+|040|070|629|
+|720|000|000|
+|891|250|070|
++-----------+
+initial number: 2
++-----------+
+|607|900|203|
+|903|420|860|
+|000|083|001|
+|-----------|
+|530|060|902|
+|000|000|037|
+|400|132|500|
+|-----------|
+|040|070|629|
+|720|000|000|
+|891|250|070|
++-----------+
+hided number: 2
++-----------+
+|xxx|xxx|#xx|
+|xxx|x#x|xxx|
+|0x0|xxx|xxx|
+|-----------|
+|xxx|xxx|xx#|
+|0x0|xxx|xxx|
+|xxx|xx#|xxx|
+|-----------|
+|xxx|xxx|x#x|
+|x#x|xxx|xxx|
+|xxx|#xx|xxx|
++-----------+
+No replacement possible @area: 1,1
+No replacement possible @area: 4,1
+No replacement possible @area: 7,1
+No replacement possible @area: 1,4
+No replacement possible @area: 4,4
+No replacement possible @area: 7,4
+No replacement possible @area: 1,7
+No replacement possible @area: 4,7
+No replacement possible @area: 7,7
+final grid for 2
++-----------+
+|607|900|203|
+|903|420|860|
+|000|083|001|
+|-----------|
+|530|060|902|
+|000|000|037|
+|400|132|500|
+|-----------|
+|040|070|629|
+|720|000|000|
+|891|250|070|
++-----------+
+initial number: 2
++-----------+
+|607|900|203|
+|903|420|860|
+|000|083|001|
+|-----------|
+|530|060|902|
+|000|000|037|
+|400|132|500|
+|-----------|
+|040|070|629|
+|720|000|000|
+|891|250|070|
++-----------+
+hided number: 2
++-----------+
+|xxx|xxx|#xx|
+|xxx|x#x|xxx|
+|0x0|xxx|xxx|
+|-----------|
+|xxx|xxx|xx#|
+|0x0|xxx|xxx|
+|xxx|xx#|xxx|
+|-----------|
+|xxx|xxx|x#x|
+|x#x|xxx|xxx|
+|xxx|#xx|xxx|
++-----------+
+No replacement possible @area: 1,1
+No replacement possible @area: 4,1
+No replacement possible @area: 7,1
+No replacement possible @area: 1,4
+No replacement possible @area: 4,4
+No replacement possible @area: 7,4
+No replacement possible @area: 1,7
+No replacement possible @area: 4,7
+No replacement possible @area: 7,7
+final grid for 2
++-----------+
+|607|900|203|
+|903|420|860|
+|000|083|001|
+|-----------|
+|530|060|902|
+|000|000|037|
+|400|132|500|
+|-----------|
+|040|070|629|
+|720|000|000|
+|891|250|070|
++-----------+
+initial number: 3
++-----------+
+|607|900|203|
+|903|420|860|
+|000|083|001|
+|-----------|
+|530|060|902|
+|000|000|037|
+|400|132|500|
+|-----------|
+|040|070|629|
+|720|000|000|
+|891|250|070|
++-----------+
+hided number: 3
++-----------+
+|xxx|xxx|xx#|
+|xx#|xxx|xxx|
+|xxx|xx#|xxx|
+|-----------|
+|x#x|xxx|xxx|
+|xxx|xxx|x#x|
+|xxx|x#x|xxx|
+|-----------|
+|0xx|0xx|6xx|
+|7xx|0xx|0xx|
+|8xx|2xx|0xx|
++-----------+
+No replacement possible @area: 1,1
+No replacement possible @area: 4,1
+No replacement possible @area: 7,1
+No replacement possible @area: 1,4
+No replacement possible @area: 4,4
+No replacement possible @area: 7,4
+we can replace here!1,7
+--- START REPLACEMENT FOR:3 @center:1,7 ---
+Here is the area:
+[
+  0,   7,   8,   'x',
+  'x', 'x', 'x', 'x',
+  'x'
+]
+REPLACEMENT @: 0 6
+NOT REPLACED7
+NOT REPLACED8
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+--- END REPLACEMENT FOR:3 @center:1,7 ---
+No replacement possible @area: 4,7
+No replacement possible @area: 7,7
+final grid for 3
++-----------+
+|607|900|203|
+|903|420|860|
+|000|083|001|
+|-----------|
+|530|060|902|
+|000|000|037|
+|400|132|500|
+|-----------|
+|340|070|629|
+|720|000|000|
+|891|250|070|
++-----------+
+initial number: 3
++-----------+
+|607|900|203|
+|903|420|860|
+|000|083|001|
+|-----------|
+|530|060|902|
+|000|000|037|
+|400|132|500|
+|-----------|
+|340|070|629|
+|720|000|000|
+|891|250|070|
++-----------+
+hided number: 3
++-----------+
+|xxx|xxx|xx#|
+|xx#|xxx|xxx|
+|xxx|xx#|xxx|
+|-----------|
+|x#x|xxx|xxx|
+|xxx|xxx|x#x|
+|xxx|x#x|xxx|
+|-----------|
+|#xx|xxx|xxx|
+|xxx|0xx|0xx|
+|xxx|2xx|0xx|
++-----------+
+No replacement possible @area: 1,1
+No replacement possible @area: 4,1
+No replacement possible @area: 7,1
+No replacement possible @area: 1,4
+No replacement possible @area: 4,4
+No replacement possible @area: 7,4
+No replacement possible @area: 1,7
+we can replace here!4,7
+--- START REPLACEMENT FOR:3 @center:4,7 ---
+Here is the area:
+[
+  'x', 0,   2,   'x',
+  'x', 'x', 'x', 'x',
+  'x'
+]
+NOT REPLACEDx
+REPLACEMENT @: 3 7
+NOT REPLACED2
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+--- END REPLACEMENT FOR:3 @center:4,7 ---
+No replacement possible @area: 7,7
+final grid for 3
++-----------+
+|607|900|203|
+|903|420|860|
+|000|083|001|
+|-----------|
+|530|060|902|
+|000|000|037|
+|400|132|500|
+|-----------|
+|340|070|629|
+|720|300|000|
+|891|250|070|
++-----------+
+initial number: 3
++-----------+
+|607|900|203|
+|903|420|860|
+|000|083|001|
+|-----------|
+|530|060|902|
+|000|000|037|
+|400|132|500|
+|-----------|
+|340|070|629|
+|720|300|000|
+|891|250|070|
++-----------+
+hided number: 3
++-----------+
+|xxx|xxx|xx#|
+|xx#|xxx|xxx|
+|xxx|xx#|xxx|
+|-----------|
+|x#x|xxx|xxx|
+|xxx|xxx|x#x|
+|xxx|x#x|xxx|
+|-----------|
+|#xx|xxx|xxx|
+|xxx|#xx|xxx|
+|xxx|xxx|0xx|
++-----------+
+No replacement possible @area: 1,1
+No replacement possible @area: 4,1
+No replacement possible @area: 7,1
+No replacement possible @area: 1,4
+No replacement possible @area: 4,4
+No replacement possible @area: 7,4
+No replacement possible @area: 1,7
+No replacement possible @area: 4,7
+we can replace here!7,7
+--- START REPLACEMENT FOR:3 @center:7,7 ---
+Here is the area:
+[
+  'x', 'x', 0,   'x',
+  'x', 'x', 'x', 'x',
+  'x'
+]
+NOT REPLACEDx
+NOT REPLACEDx
+REPLACEMENT @: 6 8
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+--- END REPLACEMENT FOR:3 @center:7,7 ---
+final grid for 3
++-----------+
+|607|900|203|
+|903|420|860|
+|000|083|001|
+|-----------|
+|530|060|902|
+|000|000|037|
+|400|132|500|
+|-----------|
+|340|070|629|
+|720|300|000|
+|891|250|370|
++-----------+
+initial number: 3
++-----------+
+|607|900|203|
+|903|420|860|
+|000|083|001|
+|-----------|
+|530|060|902|
+|000|000|037|
+|400|132|500|
+|-----------|
+|340|070|629|
+|720|300|000|
+|891|250|370|
++-----------+
+hided number: 3
++-----------+
+|xxx|xxx|xx#|
+|xx#|xxx|xxx|
+|xxx|xx#|xxx|
+|-----------|
+|x#x|xxx|xxx|
+|xxx|xxx|x#x|
+|xxx|x#x|xxx|
+|-----------|
+|#xx|xxx|xxx|
+|xxx|#xx|xxx|
+|xxx|xxx|#xx|
++-----------+
+No replacement possible @area: 1,1
+No replacement possible @area: 4,1
+No replacement possible @area: 7,1
+No replacement possible @area: 1,4
+No replacement possible @area: 4,4
+No replacement possible @area: 7,4
+No replacement possible @area: 1,7
+No replacement possible @area: 4,7
+No replacement possible @area: 7,7
+final grid for 3
++-----------+
+|607|900|203|
+|903|420|860|
+|000|083|001|
+|-----------|
+|530|060|902|
+|000|000|037|
+|400|132|500|
+|-----------|
+|340|070|629|
+|720|300|000|
+|891|250|370|
++-----------+
+initial number: 3
++-----------+
+|607|900|203|
+|903|420|860|
+|000|083|001|
+|-----------|
+|530|060|902|
+|000|000|037|
+|400|132|500|
+|-----------|
+|340|070|629|
+|720|300|000|
+|891|250|370|
++-----------+
+hided number: 3
++-----------+
+|xxx|xxx|xx#|
+|xx#|xxx|xxx|
+|xxx|xx#|xxx|
+|-----------|
+|x#x|xxx|xxx|
+|xxx|xxx|x#x|
+|xxx|x#x|xxx|
+|-----------|
+|#xx|xxx|xxx|
+|xxx|#xx|xxx|
+|xxx|xxx|#xx|
++-----------+
+No replacement possible @area: 1,1
+No replacement possible @area: 4,1
+No replacement possible @area: 7,1
+No replacement possible @area: 1,4
+No replacement possible @area: 4,4
+No replacement possible @area: 7,4
+No replacement possible @area: 1,7
+No replacement possible @area: 4,7
+No replacement possible @area: 7,7
+final grid for 3
++-----------+
+|607|900|203|
+|903|420|860|
+|000|083|001|
+|-----------|
+|530|060|902|
+|000|000|037|
+|400|132|500|
+|-----------|
+|340|070|629|
+|720|300|000|
+|891|250|370|
++-----------+
+initial number: 4
++-----------+
+|607|900|203|
+|903|420|860|
+|000|083|001|
+|-----------|
+|530|060|902|
+|000|000|037|
+|400|132|500|
+|-----------|
+|340|070|629|
+|720|300|000|
+|891|250|370|
++-----------+
+hided number: 4
++-----------+
+|xx7|x00|203|
+|xxx|#xx|xxx|
+|xx0|x83|001|
+|-----------|
+|xx0|x60|902|
+|xx0|x00|037|
+|#xx|xxx|xxx|
+|-----------|
+|x#x|xxx|xxx|
+|xx0|x00|000|
+|xx1|x50|370|
++-----------+
+we can replace here!1,1
+--- START REPLACEMENT FOR:4 @center:1,1 ---
+Here is the area:
+[
+  'x', 'x', 7,   'x',
+  'x', 'x', 'x', 'x',
+  0
+]
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACED7
+NOT REPLACEDx
+REPLACEMENT @: 2 2
+--- END REPLACEMENT FOR:4 @center:1,1 ---
+No replacement possible @area: 4,1
+No replacement possible @area: 7,1
+No replacement possible @area: 1,4
+No replacement possible @area: 4,4
+No replacement possible @area: 7,4
+No replacement possible @area: 1,7
+No replacement possible @area: 4,7
+No replacement possible @area: 7,7
+final grid for 4
++-----------+
+|607|900|203|
+|903|420|860|
+|004|083|001|
+|-----------|
+|530|060|902|
+|000|000|037|
+|400|132|500|
+|-----------|
+|340|070|629|
+|720|300|000|
+|891|250|370|
++-----------+
+initial number: 4
++-----------+
+|607|900|203|
+|903|420|860|
+|004|083|001|
+|-----------|
+|530|060|902|
+|000|000|037|
+|400|132|500|
+|-----------|
+|340|070|629|
+|720|300|000|
+|891|250|370|
++-----------+
+hided number: 4
++-----------+
+|xxx|x00|203|
+|xxx|#xx|xxx|
+|xx#|xxx|xxx|
+|-----------|
+|xxx|x60|902|
+|xxx|x00|037|
+|#xx|xxx|xxx|
+|-----------|
+|x#x|xxx|xxx|
+|xxx|x00|000|
+|xxx|x50|370|
++-----------+
+No replacement possible @area: 1,1
+No replacement possible @area: 4,1
+we can replace here!7,1
+--- START REPLACEMENT FOR:4 @center:7,1 ---
+Here is the area:
+[ 2, 'x', 'x', 0, 'x', 'x', 3, undefined, undefined ]
+NOT REPLACED2
+NOT REPLACEDx
+NOT REPLACEDx
+REPLACEMENT @: 7 0
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACED3
+NOT REPLACEDundefined
+NOT REPLACEDundefined
+--- END REPLACEMENT FOR:4 @center:7,1 ---
+No replacement possible @area: 1,4
+No replacement possible @area: 4,4
+No replacement possible @area: 7,4
+No replacement possible @area: 1,7
+No replacement possible @area: 4,7
+No replacement possible @area: 7,7
+final grid for 4
++-----------+
+|607|900|243|
+|903|420|860|
+|004|083|001|
+|-----------|
+|530|060|902|
+|000|000|037|
+|400|132|500|
+|-----------|
+|340|070|629|
+|720|300|000|
+|891|250|370|
++-----------+
+initial number: 4
++-----------+
+|607|900|243|
+|903|420|860|
+|004|083|001|
+|-----------|
+|530|060|902|
+|000|000|037|
+|400|132|500|
+|-----------|
+|340|070|629|
+|720|300|000|
+|891|250|370|
++-----------+
+hided number: 4
++-----------+
+|xxx|xxx|xx#|
+|xxx|#xx|xxx|
+|xx#|xxx|xxx|
+|-----------|
+|xxx|x60|9x2|
+|xxx|x00|0x7|
+|#xx|xxx|xxx|
+|-----------|
+|x#x|xxx|xxx|
+|xxx|x00|0x0|
+|xxx|x50|3x0|
++-----------+
+No replacement possible @area: 1,1
+No replacement possible @area: 4,1
+No replacement possible @area: 7,1
+No replacement possible @area: 1,4
+No replacement possible @area: 4,4
+we can replace here!7,4
+--- START REPLACEMENT FOR:4 @center:7,4 ---
+Here is the area:
+[ 9, 0, 'x', 'x', 'x', 'x', 2, 7, undefined ]
+NOT REPLACED9
+REPLACEMENT @: 6 4
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACED2
+NOT REPLACED7
+NOT REPLACEDundefined
+--- END REPLACEMENT FOR:4 @center:7,4 ---
+No replacement possible @area: 1,7
+No replacement possible @area: 4,7
+No replacement possible @area: 7,7
+final grid for 4
++-----------+
+|607|900|243|
+|903|420|860|
+|004|083|001|
+|-----------|
+|530|060|902|
+|000|000|437|
+|400|132|500|
+|-----------|
+|340|070|629|
+|720|300|000|
+|891|250|370|
++-----------+
+initial number: 4
++-----------+
+|607|900|243|
+|903|420|860|
+|004|083|001|
+|-----------|
+|530|060|902|
+|000|000|437|
+|400|132|500|
+|-----------|
+|340|070|629|
+|720|300|000|
+|891|250|370|
++-----------+
+hided number: 4
++-----------+
+|xxx|xxx|xx#|
+|xxx|#xx|xxx|
+|xx#|xxx|xxx|
+|-----------|
+|xxx|x60|xx2|
+|xxx|xxx|x#x|
+|#xx|xxx|xxx|
+|-----------|
+|x#x|xxx|xxx|
+|xxx|x00|xx0|
+|xxx|x50|xx0|
++-----------+
+No replacement possible @area: 1,1
+No replacement possible @area: 4,1
+No replacement possible @area: 7,1
+No replacement possible @area: 1,4
+we can replace here!4,4
+--- START REPLACEMENT FOR:4 @center:4,4 ---
+Here is the area:
+[
+  'x', 'x', 'x', 6,
+  'x', 'x', 0,   'x',
+  'x'
+]
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACED6
+NOT REPLACEDx
+NOT REPLACEDx
+REPLACEMENT @: 5 3
+NOT REPLACEDx
+NOT REPLACEDx
+--- END REPLACEMENT FOR:4 @center:4,4 ---
+No replacement possible @area: 7,4
+No replacement possible @area: 1,7
+No replacement possible @area: 4,7
+No replacement possible @area: 7,7
+final grid for 4
++-----------+
+|607|900|243|
+|903|420|860|
+|004|083|001|
+|-----------|
+|530|064|902|
+|000|000|437|
+|400|132|500|
+|-----------|
+|340|070|629|
+|720|300|000|
+|891|250|370|
++-----------+
+initial number: 4
++-----------+
+|607|900|243|
+|903|420|860|
+|004|083|001|
+|-----------|
+|530|064|902|
+|000|000|437|
+|400|132|500|
+|-----------|
+|340|070|629|
+|720|300|000|
+|891|250|370|
++-----------+
+hided number: 4
++-----------+
+|xxx|xxx|xx#|
+|xxx|#xx|xxx|
+|xx#|xxx|xxx|
+|-----------|
+|xxx|xx#|#xx|
+|xxx|xxx|x#x|
+|#xx|xxx|xxx|
+|-----------|
+|x#x|xxx|xxx|
+|xxx|x0x|xx0|
+|xxx|x5x|xx0|
++-----------+
+No replacement possible @area: 1,1
+No replacement possible @area: 4,1
+No replacement possible @area: 7,1
+No replacement possible @area: 1,4
+No replacement possible @area: 4,4
+No replacement possible @area: 7,4
+No replacement possible @area: 1,7
+we can replace here!4,7
+--- START REPLACEMENT FOR:4 @center:4,7 ---
+Here is the area:
+[
+  'x', 'x', 'x', 'x',
+  0,   5,   'x', 'x',
+  'x'
+]
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+REPLACEMENT @: 4 7
+NOT REPLACED5
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+--- END REPLACEMENT FOR:4 @center:4,7 ---
+No replacement possible @area: 7,7
+final grid for 4
++-----------+
+|607|900|243|
+|903|420|860|
+|004|083|001|
+|-----------|
+|530|064|902|
+|000|000|437|
+|400|132|500|
+|-----------|
+|340|070|629|
+|720|340|000|
+|891|250|370|
++-----------+
+initial number: 4
++-----------+
+|607|900|243|
+|903|420|860|
+|004|083|001|
+|-----------|
+|530|064|902|
+|000|000|437|
+|400|132|500|
+|-----------|
+|340|070|629|
+|720|340|000|
+|891|250|370|
++-----------+
+hided number: 4
++-----------+
+|xxx|xxx|xx#|
+|xxx|#xx|xxx|
+|xx#|xxx|xxx|
+|-----------|
+|xxx|xx#|#xx|
+|xxx|xxx|x#x|
+|#xx|xxx|xxx|
+|-----------|
+|x#x|xxx|xxx|
+|xxx|x#x|xxx|
+|xxx|xxx|xx0|
++-----------+
+No replacement possible @area: 1,1
+No replacement possible @area: 4,1
+No replacement possible @area: 7,1
+No replacement possible @area: 1,4
+No replacement possible @area: 4,4
+No replacement possible @area: 7,4
+No replacement possible @area: 1,7
+No replacement possible @area: 4,7
+we can replace here!7,7
+--- START REPLACEMENT FOR:4 @center:7,7 ---
+Here is the area:
+[ 'x', 'x', 'x', 'x', 'x', 'x', undefined, undefined, 0 ]
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDundefined
+NOT REPLACEDundefined
+REPLACEMENT @: 8 8
+--- END REPLACEMENT FOR:4 @center:7,7 ---
+final grid for 4
++-----------+
+|607|900|243|
+|903|420|860|
+|004|083|001|
+|-----------|
+|530|064|902|
+|000|000|437|
+|400|132|500|
+|-----------|
+|340|070|629|
+|720|340|000|
+|891|250|374|
++-----------+
+initial number: 4
++-----------+
+|607|900|243|
+|903|420|860|
+|004|083|001|
+|-----------|
+|530|064|902|
+|000|000|437|
+|400|132|500|
+|-----------|
+|340|070|629|
+|720|340|000|
+|891|250|374|
++-----------+
+hided number: 4
++-----------+
+|xxx|xxx|x#x|
+|xxx|#xx|xxx|
+|xx#|xxx|xxx|
+|-----------|
+|xxx|xx#|xxx|
+|xxx|xxx|#xx|
+|#xx|xxx|xxx|
+|-----------|
+|x#x|xxx|xxx|
+|xxx|x#x|xxx|
+|xxx|xxx|xx#|
++-----------+
+No replacement possible @area: 1,1
+No replacement possible @area: 4,1
+No replacement possible @area: 7,1
+No replacement possible @area: 1,4
+No replacement possible @area: 4,4
+No replacement possible @area: 7,4
+No replacement possible @area: 1,7
+No replacement possible @area: 4,7
+No replacement possible @area: 7,7
+final grid for 4
++-----------+
+|607|900|243|
+|903|420|860|
+|004|083|001|
+|-----------|
+|530|064|902|
+|000|000|437|
+|400|132|500|
+|-----------|
+|340|070|629|
+|720|340|000|
+|891|250|374|
++-----------+
+initial number: 5
++-----------+
+|607|900|243|
+|903|420|860|
+|004|083|001|
+|-----------|
+|530|064|902|
+|000|000|437|
+|400|132|500|
+|-----------|
+|340|070|629|
+|720|340|000|
+|891|250|374|
++-----------+
+hided number: 5
++-----------+
+|x07|9x0|x43|
+|x03|4x0|x60|
+|x04|0x3|x01|
+|-----------|
+|#xx|xxx|xxx|
+|x00|0x0|x37|
+|xxx|xxx|x#x|
+|-----------|
+|x40|0x0|x29|
+|x20|3x0|x00|
+|xxx|x#x|xxx|
++-----------+
+No replacement possible @area: 1,1
+No replacement possible @area: 4,1
+No replacement possible @area: 7,1
+No replacement possible @area: 1,4
+No replacement possible @area: 4,4
+No replacement possible @area: 7,4
+No replacement possible @area: 1,7
+No replacement possible @area: 4,7
+No replacement possible @area: 7,7
+final grid for 5
++-----------+
+|607|900|243|
+|903|420|860|
+|004|083|001|
+|-----------|
+|530|064|902|
+|000|000|437|
+|400|132|500|
+|-----------|
+|340|070|629|
+|720|340|000|
+|891|250|374|
++-----------+
+initial number: 6
++-----------+
+|607|900|243|
+|903|420|860|
+|004|083|001|
+|-----------|
+|530|064|902|
+|000|000|437|
+|400|132|500|
+|-----------|
+|340|070|629|
+|720|340|000|
+|891|250|374|
++-----------+
+hided number: 6
++-----------+
+|#xx|xxx|xxx|
+|xxx|xxx|xx#|
+|x04|0x3|xx1|
+|-----------|
+|xxx|x#x|xxx|
+|x00|0x0|xx7|
+|x00|1x2|xx0|
+|-----------|
+|xxx|xxx|x#x|
+|x20|3x0|xx0|
+|x91|2x0|xx4|
++-----------+
+No replacement possible @area: 1,1
+we can replace here!4,1
+--- START REPLACEMENT FOR:6 @center:4,1 ---
+Here is the area:
+[
+  'x', 'x', 0,   'x',
+  'x', 'x', 'x', 'x',
+  3
+]
+NOT REPLACEDx
+NOT REPLACEDx
+REPLACEMENT @: 3 2
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACED3
+--- END REPLACEMENT FOR:6 @center:4,1 ---
+No replacement possible @area: 7,1
+No replacement possible @area: 1,4
+No replacement possible @area: 4,4
+we can replace here!7,4
+--- START REPLACEMENT FOR:6 @center:7,4 ---
+Here is the area:
+[ 'x', 'x', 'x', 'x', 'x', 'x', undefined, 7, 0 ]
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDundefined
+NOT REPLACED7
+REPLACEMENT @: 8 5
+--- END REPLACEMENT FOR:6 @center:7,4 ---
+we can replace here!1,7
+--- START REPLACEMENT FOR:6 @center:1,7 ---
+Here is the area:
+[
+  'x', 'x', 'x', 'x', 2,
+  9,   'x', 0,   1
+]
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACED2
+NOT REPLACED9
+NOT REPLACEDx
+REPLACEMENT @: 2 7
+NOT REPLACED1
+--- END REPLACEMENT FOR:6 @center:1,7 ---
+No replacement possible @area: 4,7
+No replacement possible @area: 7,7
+final grid for 6
++-----------+
+|607|900|243|
+|903|420|860|
+|004|683|001|
+|-----------|
+|530|064|902|
+|000|000|437|
+|400|132|506|
+|-----------|
+|340|070|629|
+|726|340|000|
+|891|250|374|
++-----------+
+initial number: 6
++-----------+
+|607|900|243|
+|903|420|860|
+|004|683|001|
+|-----------|
+|530|064|902|
+|000|000|437|
+|400|132|506|
+|-----------|
+|340|070|629|
+|726|340|000|
+|891|250|374|
++-----------+
+hided number: 6
++-----------+
+|#xx|xxx|xxx|
+|xxx|xxx|x#x|
+|xxx|#xx|xxx|
+|-----------|
+|xxx|x#x|xxx|
+|x0x|xx0|xxx|
+|xxx|xxx|xx#|
+|-----------|
+|xxx|xxx|#xx|
+|xx#|xxx|xxx|
+|x9x|xx0|xxx|
++-----------+
+No replacement possible @area: 1,1
+No replacement possible @area: 4,1
+No replacement possible @area: 7,1
+we can replace here!1,4
+--- START REPLACEMENT FOR:6 @center:1,4 ---
+Here is the area:
+[
+  'x', 'x', 'x', 'x',
+  0,   'x', 'x', 'x',
+  'x'
+]
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+REPLACEMENT @: 1 4
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+--- END REPLACEMENT FOR:6 @center:1,4 ---
+No replacement possible @area: 4,4
+No replacement possible @area: 7,4
+No replacement possible @area: 1,7
+we can replace here!4,7
+--- START REPLACEMENT FOR:6 @center:4,7 ---
+Here is the area:
+[
+  'x', 'x', 'x', 'x',
+  'x', 'x', 'x', 'x',
+  0
+]
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+REPLACEMENT @: 5 8
+--- END REPLACEMENT FOR:6 @center:4,7 ---
+No replacement possible @area: 7,7
+final grid for 6
++-----------+
+|607|900|243|
+|903|420|860|
+|004|683|001|
+|-----------|
+|530|064|902|
+|060|000|437|
+|400|132|506|
+|-----------|
+|340|070|629|
+|726|340|000|
+|891|256|374|
++-----------+
+initial number: 6
++-----------+
+|607|900|243|
+|903|420|860|
+|004|683|001|
+|-----------|
+|530|064|902|
+|060|000|437|
+|400|132|506|
+|-----------|
+|340|070|629|
+|726|340|000|
+|891|256|374|
++-----------+
+hided number: 6
++-----------+
+|#xx|xxx|xxx|
+|xxx|xxx|x#x|
+|xxx|#xx|xxx|
+|-----------|
+|xxx|x#x|xxx|
+|x#x|xxx|xxx|
+|xxx|xxx|xx#|
+|-----------|
+|xxx|xxx|#xx|
+|xx#|xxx|xxx|
+|xxx|xx#|xxx|
++-----------+
+No replacement possible @area: 1,1
+No replacement possible @area: 4,1
+No replacement possible @area: 7,1
+No replacement possible @area: 1,4
+No replacement possible @area: 4,4
+No replacement possible @area: 7,4
+No replacement possible @area: 1,7
+No replacement possible @area: 4,7
+No replacement possible @area: 7,7
+final grid for 6
++-----------+
+|607|900|243|
+|903|420|860|
+|004|683|001|
+|-----------|
+|530|064|902|
+|060|000|437|
+|400|132|506|
+|-----------|
+|340|070|629|
+|726|340|000|
+|891|256|374|
++-----------+
+initial number: 7
++-----------+
+|607|900|243|
+|903|420|860|
+|004|683|001|
+|-----------|
+|530|064|902|
+|060|000|437|
+|400|132|506|
+|-----------|
+|340|070|629|
+|726|340|000|
+|891|256|374|
++-----------+
+hided number: 7
++-----------+
+|xx#|xxx|xxx|
+|x0x|4x0|8xx|
+|x0x|6x3|0xx|
+|-----------|
+|x3x|0x4|9xx|
+|xxx|xxx|xx#|
+|x0x|1x2|5xx|
+|-----------|
+|xxx|x#x|xxx|
+|#xx|xxx|xxx|
+|xxx|xxx|x#x|
++-----------+
+No replacement possible @area: 1,1
+we can replace here!4,1
+--- START REPLACEMENT FOR:7 @center:4,1 ---
+Here is the area:
+[
+  'x', 4,   6, 'x', 'x',
+  'x', 'x', 0, 3
+]
+NOT REPLACEDx
+NOT REPLACED4
+NOT REPLACED6
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+REPLACEMENT @: 5 1
+NOT REPLACED3
+--- END REPLACEMENT FOR:7 @center:4,1 ---
+we can replace here!7,1
+--- START REPLACEMENT FOR:7 @center:7,1 ---
+Here is the area:
+[
+  'x', 8,   0,   'x',
+  'x', 'x', 'x', 'x',
+  'x'
+]
+NOT REPLACEDx
+NOT REPLACED8
+REPLACEMENT @: 6 2
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+--- END REPLACEMENT FOR:7 @center:7,1 ---
+we can replace here!1,4
+--- START REPLACEMENT FOR:7 @center:1,4 ---
+Here is the area:
+[
+  'x', 'x', 'x', 3,
+  'x', 0,   'x', 'x',
+  'x'
+]
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACED3
+NOT REPLACEDx
+REPLACEMENT @: 1 5
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+--- END REPLACEMENT FOR:7 @center:1,4 ---
+we can replace here!4,4
+--- START REPLACEMENT FOR:7 @center:4,4 ---
+Here is the area:
+[
+  0,   'x', 1,   'x', 'x',
+  'x', 4,   'x', 2
+]
+REPLACEMENT @: 3 3
+NOT REPLACEDx
+NOT REPLACED1
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACED4
+NOT REPLACEDx
+NOT REPLACED2
+--- END REPLACEMENT FOR:7 @center:4,4 ---
+No replacement possible @area: 7,4
+No replacement possible @area: 1,7
+No replacement possible @area: 4,7
+No replacement possible @area: 7,7
+final grid for 7
++-----------+
+|607|900|243|
+|903|427|860|
+|004|683|701|
+|-----------|
+|530|764|902|
+|060|000|437|
+|470|132|506|
+|-----------|
+|340|070|629|
+|726|340|000|
+|891|256|374|
++-----------+
+initial number: 7
++-----------+
+|607|900|243|
+|903|427|860|
+|004|683|701|
+|-----------|
+|530|764|902|
+|060|000|437|
+|470|132|506|
+|-----------|
+|340|070|629|
+|726|340|000|
+|891|256|374|
++-----------+
+hided number: 7
++-----------+
+|xx#|xxx|xxx|
+|xxx|xx#|xxx|
+|xxx|xxx|#xx|
+|-----------|
+|xxx|#xx|xxx|
+|xxx|xxx|xx#|
+|x#x|xxx|xxx|
+|-----------|
+|xxx|x#x|xxx|
+|#xx|xxx|xxx|
+|xxx|xxx|x#x|
++-----------+
+No replacement possible @area: 1,1
+No replacement possible @area: 4,1
+No replacement possible @area: 7,1
+No replacement possible @area: 1,4
+No replacement possible @area: 4,4
+No replacement possible @area: 7,4
+No replacement possible @area: 1,7
+No replacement possible @area: 4,7
+No replacement possible @area: 7,7
+final grid for 7
++-----------+
+|607|900|243|
+|903|427|860|
+|004|683|701|
+|-----------|
+|530|764|902|
+|060|000|437|
+|470|132|506|
+|-----------|
+|340|070|629|
+|726|340|000|
+|891|256|374|
++-----------+
+initial number: 7
++-----------+
+|607|900|243|
+|903|427|860|
+|004|683|701|
+|-----------|
+|530|764|902|
+|060|000|437|
+|470|132|506|
+|-----------|
+|340|070|629|
+|726|340|000|
+|891|256|374|
++-----------+
+hided number: 7
++-----------+
+|xx#|xxx|xxx|
+|xxx|xx#|xxx|
+|xxx|xxx|#xx|
+|-----------|
+|xxx|#xx|xxx|
+|xxx|xxx|xx#|
+|x#x|xxx|xxx|
+|-----------|
+|xxx|x#x|xxx|
+|#xx|xxx|xxx|
+|xxx|xxx|x#x|
++-----------+
+No replacement possible @area: 1,1
+No replacement possible @area: 4,1
+No replacement possible @area: 7,1
+No replacement possible @area: 1,4
+No replacement possible @area: 4,4
+No replacement possible @area: 7,4
+No replacement possible @area: 1,7
+No replacement possible @area: 4,7
+No replacement possible @area: 7,7
+final grid for 7
++-----------+
+|607|900|243|
+|903|427|860|
+|004|683|701|
+|-----------|
+|530|764|902|
+|060|000|437|
+|470|132|506|
+|-----------|
+|340|070|629|
+|726|340|000|
+|891|256|374|
++-----------+
+initial number: 8
++-----------+
+|607|900|243|
+|903|427|860|
+|004|683|701|
+|-----------|
+|530|764|902|
+|060|000|437|
+|470|132|506|
+|-----------|
+|340|070|629|
+|726|340|000|
+|891|256|374|
++-----------+
+hided number: 8
++-----------+
+|x07|9x0|x43|
+|xxx|xxx|x#x|
+|xxx|x#x|xxx|
+|-----------|
+|x30|7x4|x02|
+|x60|0x0|x37|
+|x70|1x2|x06|
+|-----------|
+|x40|0x0|x29|
+|x26|3x0|x00|
+|#xx|xxx|xxx|
++-----------+
+we can replace here!1,1
+--- START REPLACEMENT FOR:8 @center:1,1 ---
+Here is the area:
+[
+  'x', 0,   7,   'x',
+  'x', 'x', 'x', 'x',
+  'x'
+]
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+REPLACEMENT @: 1 0
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACED7
+NOT REPLACEDx
+NOT REPLACEDx
+--- END REPLACEMENT FOR:8 @center:1,1 ---
+No replacement possible @area: 4,1
+No replacement possible @area: 7,1
+No replacement possible @area: 1,4
+No replacement possible @area: 4,4
+No replacement possible @area: 7,4
+No replacement possible @area: 1,7
+No replacement possible @area: 4,7
+No replacement possible @area: 7,7
+final grid for 8
++-----------+
+|687|900|243|
+|903|427|860|
+|004|683|701|
+|-----------|
+|530|764|902|
+|060|000|437|
+|470|132|506|
+|-----------|
+|340|070|629|
+|726|340|000|
+|891|256|374|
++-----------+
+initial number: 8
++-----------+
+|687|900|243|
+|903|427|860|
+|004|683|701|
+|-----------|
+|530|764|902|
+|060|000|437|
+|470|132|506|
+|-----------|
+|340|070|629|
+|726|340|000|
+|891|256|374|
++-----------+
+hided number: 8
++-----------+
+|x#x|xxx|xxx|
+|xxx|xxx|x#x|
+|xxx|x#x|xxx|
+|-----------|
+|xx0|7x4|x02|
+|xx0|0x0|x37|
+|xx0|1x2|x06|
+|-----------|
+|xx0|0x0|x29|
+|xx6|3x0|x00|
+|#xx|xxx|xxx|
++-----------+
+No replacement possible @area: 1,1
+No replacement possible @area: 4,1
+No replacement possible @area: 7,1
+No replacement possible @area: 1,4
+No replacement possible @area: 4,4
+No replacement possible @area: 7,4
+No replacement possible @area: 1,7
+No replacement possible @area: 4,7
+No replacement possible @area: 7,7
+final grid for 8
++-----------+
+|687|900|243|
+|903|427|860|
+|004|683|701|
+|-----------|
+|530|764|902|
+|060|000|437|
+|470|132|506|
+|-----------|
+|340|070|629|
+|726|340|000|
+|891|256|374|
++-----------+
+initial number: 8
++-----------+
+|687|900|243|
+|903|427|860|
+|004|683|701|
+|-----------|
+|530|764|902|
+|060|000|437|
+|470|132|506|
+|-----------|
+|340|070|629|
+|726|340|000|
+|891|256|374|
++-----------+
+hided number: 8
++-----------+
+|x#x|xxx|xxx|
+|xxx|xxx|x#x|
+|xxx|x#x|xxx|
+|-----------|
+|xx0|7x4|x02|
+|xx0|0x0|x37|
+|xx0|1x2|x06|
+|-----------|
+|xx0|0x0|x29|
+|xx6|3x0|x00|
+|#xx|xxx|xxx|
++-----------+
+No replacement possible @area: 1,1
+No replacement possible @area: 4,1
+No replacement possible @area: 7,1
+No replacement possible @area: 1,4
+No replacement possible @area: 4,4
+No replacement possible @area: 7,4
+No replacement possible @area: 1,7
+No replacement possible @area: 4,7
+No replacement possible @area: 7,7
+final grid for 8
++-----------+
+|687|900|243|
+|903|427|860|
+|004|683|701|
+|-----------|
+|530|764|902|
+|060|000|437|
+|470|132|506|
+|-----------|
+|340|070|629|
+|726|340|000|
+|891|256|374|
++-----------+
+initial number: 9
++-----------+
+|687|900|243|
+|903|427|860|
+|004|683|701|
+|-----------|
+|530|764|902|
+|060|000|437|
+|470|132|506|
+|-----------|
+|340|070|629|
+|726|340|000|
+|891|256|374|
++-----------+
+hided number: 9
++-----------+
+|xxx|#xx|xxx|
+|#xx|xxx|xxx|
+|xx4|x83|x0x|
+|-----------|
+|xxx|xxx|#xx|
+|xx0|x00|x3x|
+|xx0|x32|x0x|
+|-----------|
+|xxx|xxx|xx#|
+|xx6|x40|x0x|
+|x#x|xxx|xxx|
++-----------+
+No replacement possible @area: 1,1
+No replacement possible @area: 4,1
+we can replace here!7,1
+--- START REPLACEMENT FOR:9 @center:7,1 ---
+Here is the area:
+[
+  'x', 'x', 'x', 'x',
+  'x', 0,   'x', 'x',
+  'x'
+]
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+REPLACEMENT @: 7 2
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+--- END REPLACEMENT FOR:9 @center:7,1 ---
+No replacement possible @area: 1,4
+No replacement possible @area: 4,4
+No replacement possible @area: 7,4
+No replacement possible @area: 1,7
+we can replace here!4,7
+--- START REPLACEMENT FOR:9 @center:4,7 ---
+Here is the area:
+[
+  'x', 'x', 'x', 'x',
+  4,   'x', 'x', 0,
+  'x'
+]
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACED4
+NOT REPLACEDx
+NOT REPLACEDx
+REPLACEMENT @: 5 7
+NOT REPLACEDx
+--- END REPLACEMENT FOR:9 @center:4,7 ---
+No replacement possible @area: 7,7
+final grid for 9
++-----------+
+|687|900|243|
+|903|427|860|
+|004|683|791|
+|-----------|
+|530|764|902|
+|060|000|437|
+|470|132|506|
+|-----------|
+|340|070|629|
+|726|349|000|
+|891|256|374|
++-----------+
+initial number: 9
++-----------+
+|687|900|243|
+|903|427|860|
+|004|683|791|
+|-----------|
+|530|764|902|
+|060|000|437|
+|470|132|506|
+|-----------|
+|340|070|629|
+|726|349|000|
+|891|256|374|
++-----------+
+hided number: 9
++-----------+
+|xxx|#xx|xxx|
+|#xx|xxx|xxx|
+|xxx|xxx|x#x|
+|-----------|
+|xxx|xxx|#xx|
+|xx0|x0x|xxx|
+|xx0|x3x|xxx|
+|-----------|
+|xxx|xxx|xx#|
+|xxx|xx#|xxx|
+|x#x|xxx|xxx|
++-----------+
+No replacement possible @area: 1,1
+No replacement possible @area: 4,1
+No replacement possible @area: 7,1
+No replacement possible @area: 1,4
+we can replace here!4,4
+--- START REPLACEMENT FOR:9 @center:4,4 ---
+Here is the area:
+[
+  'x', 'x', 'x', 'x',
+  0,   3,   'x', 'x',
+  'x'
+]
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+REPLACEMENT @: 4 4
+NOT REPLACED3
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+--- END REPLACEMENT FOR:9 @center:4,4 ---
+No replacement possible @area: 7,4
+No replacement possible @area: 1,7
+No replacement possible @area: 4,7
+No replacement possible @area: 7,7
+final grid for 9
++-----------+
+|687|900|243|
+|903|427|860|
+|004|683|791|
+|-----------|
+|530|764|902|
+|060|090|437|
+|470|132|506|
+|-----------|
+|340|070|629|
+|726|349|000|
+|891|256|374|
++-----------+
+initial number: 9
++-----------+
+|687|900|243|
+|903|427|860|
+|004|683|791|
+|-----------|
+|530|764|902|
+|060|090|437|
+|470|132|506|
+|-----------|
+|340|070|629|
+|726|349|000|
+|891|256|374|
++-----------+
+hided number: 9
++-----------+
+|xxx|#xx|xxx|
+|#xx|xxx|xxx|
+|xxx|xxx|x#x|
+|-----------|
+|xxx|xxx|#xx|
+|xxx|x#x|xxx|
+|xx0|xxx|xxx|
+|-----------|
+|xxx|xxx|xx#|
+|xxx|xx#|xxx|
+|x#x|xxx|xxx|
++-----------+
+No replacement possible @area: 1,1
+No replacement possible @area: 4,1
+No replacement possible @area: 7,1
+we can replace here!1,4
+--- START REPLACEMENT FOR:9 @center:1,4 ---
+Here is the area:
+[
+  'x', 'x', 'x', 'x',
+  'x', 'x', 'x', 'x',
+  0
+]
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+REPLACEMENT @: 2 5
+--- END REPLACEMENT FOR:9 @center:1,4 ---
+No replacement possible @area: 4,4
+No replacement possible @area: 7,4
+No replacement possible @area: 1,7
+No replacement possible @area: 4,7
+No replacement possible @area: 7,7
+final grid for 9
++-----------+
+|687|900|243|
+|903|427|860|
+|004|683|791|
+|-----------|
+|530|764|902|
+|060|090|437|
+|479|132|506|
+|-----------|
+|340|070|629|
+|726|349|000|
+|891|256|374|
++-----------+
+initial number: 9
++-----------+
+|687|900|243|
+|903|427|860|
+|004|683|791|
+|-----------|
+|530|764|902|
+|060|090|437|
+|479|132|506|
+|-----------|
+|340|070|629|
+|726|349|000|
+|891|256|374|
++-----------+
+hided number: 9
++-----------+
+|xxx|#xx|xxx|
+|#xx|xxx|xxx|
+|xxx|xxx|x#x|
+|-----------|
+|xxx|xxx|#xx|
+|xxx|x#x|xxx|
+|xx#|xxx|xxx|
+|-----------|
+|xxx|xxx|xx#|
+|xxx|xx#|xxx|
+|x#x|xxx|xxx|
++-----------+
+No replacement possible @area: 1,1
+No replacement possible @area: 4,1
+No replacement possible @area: 7,1
+No replacement possible @area: 1,4
+No replacement possible @area: 4,4
+No replacement possible @area: 7,4
+No replacement possible @area: 1,7
+No replacement possible @area: 4,7
+No replacement possible @area: 7,7
+final grid for 9
++-----------+
+|687|900|243|
+|903|427|860|
+|004|683|791|
+|-----------|
+|530|764|902|
+|060|090|437|
+|479|132|506|
+|-----------|
+|340|070|629|
+|726|349|000|
+|891|256|374|
++-----------+
+initial number: 9
++-----------+
+|687|900|243|
+|903|427|860|
+|004|683|791|
+|-----------|
+|530|764|902|
+|060|090|437|
+|479|132|506|
+|-----------|
+|340|070|629|
+|726|349|000|
+|891|256|374|
++-----------+
+hided number: 9
++-----------+
+|xxx|#xx|xxx|
+|#xx|xxx|xxx|
+|xxx|xxx|x#x|
+|-----------|
+|xxx|xxx|#xx|
+|xxx|x#x|xxx|
+|xx#|xxx|xxx|
+|-----------|
+|xxx|xxx|xx#|
+|xxx|xx#|xxx|
+|x#x|xxx|xxx|
++-----------+
+No replacement possible @area: 1,1
+No replacement possible @area: 4,1
+No replacement possible @area: 7,1
+No replacement possible @area: 1,4
+No replacement possible @area: 4,4
+No replacement possible @area: 7,4
+No replacement possible @area: 1,7
+No replacement possible @area: 4,7
+No replacement possible @area: 7,7
+final grid for 9
++-----------+
+|687|900|243|
+|903|427|860|
+|004|683|791|
+|-----------|
+|530|764|902|
+|060|090|437|
+|479|132|506|
+|-----------|
+|340|070|629|
+|726|349|000|
+|891|256|374|
++-----------+
+--- COUNTING 1 ---
+1 finded
+1 finded
+1 finded
+--- COUNTING 2 ---
+2 finded
+2 finded
+2 finded
+2 finded
+2 finded
+2 finded
+2 finded
+--- COUNTING 3 ---
+3 finded
+3 finded
+3 finded
+3 finded
+3 finded
+3 finded
+3 finded
+3 finded
+3 finded
+--- COUNTING 4 ---
+4 finded
+4 finded
+4 finded
+4 finded
+4 finded
+4 finded
+4 finded
+4 finded
+4 finded
+--- COUNTING 5 ---
+5 finded
+5 finded
+5 finded
+--- COUNTING 6 ---
+6 finded
+6 finded
+6 finded
+6 finded
+6 finded
+6 finded
+6 finded
+6 finded
+6 finded
+--- COUNTING 7 ---
+7 finded
+7 finded
+7 finded
+7 finded
+7 finded
+7 finded
+7 finded
+7 finded
+7 finded
+--- COUNTING 8 ---
+8 finded
+8 finded
+8 finded
+8 finded
+--- COUNTING 9 ---
+9 finded
+9 finded
+9 finded
+9 finded
+9 finded
+9 finded
+9 finded
+9 finded
+9 finded
+RUN NB:1
+initial number: 1
++-----------+
+|687|900|243|
+|903|427|860|
+|004|683|791|
+|-----------|
+|530|764|902|
+|060|090|437|
+|479|132|506|
+|-----------|
+|340|070|629|
+|726|349|000|
+|891|256|374|
++-----------+
+hided number: 1
++-----------+
+|68x|x00|24x|
+|90x|x27|86x|
+|xxx|xxx|xx#|
+|-----------|
+|53x|x64|90x|
+|06x|x90|43x|
+|xxx|#xx|xxx|
+|-----------|
+|34x|x70|62x|
+|72x|x49|00x|
+|xx#|xxx|xxx|
++-----------+
+we can replace here!1,1
+--- START REPLACEMENT FOR:1 @center:1,1 ---
+Here is the area:
+[
+  6,   8,   'x', 9,   0,
+  'x', 'x', 'x', 'x'
+]
+NOT REPLACED6
+NOT REPLACED9
+NOT REPLACEDx
+NOT REPLACED8
+REPLACEMENT @: 1 1
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+--- END REPLACEMENT FOR:1 @center:1,1 ---
+No replacement possible @area: 4,1
+No replacement possible @area: 7,1
+we can replace here!1,4
+--- START REPLACEMENT FOR:1 @center:1,4 ---
+Here is the area:
+[
+  5,   0,   'x', 3,   6,
+  'x', 'x', 'x', 'x'
+]
+NOT REPLACED5
+REPLACEMENT @: 0 4
+NOT REPLACEDx
+NOT REPLACED3
+NOT REPLACED6
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+--- END REPLACEMENT FOR:1 @center:1,4 ---
+No replacement possible @area: 4,4
+we can replace here!7,4
+--- START REPLACEMENT FOR:1 @center:7,4 ---
+Here is the area:
+[
+  9,   4,   'x', 0,   3,
+  'x', 'x', 'x', 'x'
+]
+NOT REPLACED9
+NOT REPLACED4
+NOT REPLACEDx
+REPLACEMENT @: 7 3
+NOT REPLACED3
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+--- END REPLACEMENT FOR:1 @center:7,4 ---
+No replacement possible @area: 1,7
+we can replace here!4,7
+--- START REPLACEMENT FOR:1 @center:4,7 ---
+Here is the area:
+[
+  'x', 'x', 'x', 7,   4,
+  'x', 0,   9,   'x'
+]
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACED7
+NOT REPLACED4
+NOT REPLACEDx
+REPLACEMENT @: 5 6
+NOT REPLACED9
+NOT REPLACEDx
+--- END REPLACEMENT FOR:1 @center:4,7 ---
+No replacement possible @area: 7,7
+final grid for 1
++-----------+
+|687|900|243|
+|913|427|860|
+|004|683|791|
+|-----------|
+|530|764|912|
+|160|090|437|
+|479|132|506|
+|-----------|
+|340|071|629|
+|726|349|000|
+|891|256|374|
++-----------+
+initial number: 1
++-----------+
+|687|900|243|
+|913|427|860|
+|004|683|791|
+|-----------|
+|530|764|912|
+|160|090|437|
+|479|132|506|
+|-----------|
+|340|071|629|
+|726|349|000|
+|891|256|374|
++-----------+
+hided number: 1
++-----------+
+|xxx|x0x|2xx|
+|x#x|xxx|xxx|
+|xxx|xxx|xx#|
+|-----------|
+|xxx|xxx|x#x|
+|#xx|xxx|xxx|
+|xxx|#xx|xxx|
+|-----------|
+|xxx|xx#|xxx|
+|xxx|x4x|0xx|
+|xx#|xxx|xxx|
++-----------+
+No replacement possible @area: 1,1
+we can replace here!4,1
+--- START REPLACEMENT FOR:1 @center:4,1 ---
+Here is the area:
+[
+  'x', 'x', 'x', 0,
+  'x', 'x', 'x', 'x',
+  'x'
+]
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+REPLACEMENT @: 4 0
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+--- END REPLACEMENT FOR:1 @center:4,1 ---
+No replacement possible @area: 7,1
+No replacement possible @area: 1,4
+No replacement possible @area: 4,4
+No replacement possible @area: 7,4
+No replacement possible @area: 1,7
+No replacement possible @area: 4,7
+we can replace here!7,7
+--- START REPLACEMENT FOR:1 @center:7,7 ---
+Here is the area:
+[
+  'x', 0,   'x', 'x',
+  'x', 'x', 'x', 'x',
+  'x'
+]
+NOT REPLACEDx
+REPLACEMENT @: 6 7
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+--- END REPLACEMENT FOR:1 @center:7,7 ---
+final grid for 1
++-----------+
+|687|910|243|
+|913|427|860|
+|004|683|791|
+|-----------|
+|530|764|912|
+|160|090|437|
+|479|132|506|
+|-----------|
+|340|071|629|
+|726|349|100|
+|891|256|374|
++-----------+
+initial number: 1
++-----------+
+|687|910|243|
+|913|427|860|
+|004|683|791|
+|-----------|
+|530|764|912|
+|160|090|437|
+|479|132|506|
+|-----------|
+|340|071|629|
+|726|349|100|
+|891|256|374|
++-----------+
+hided number: 1
++-----------+
+|xxx|x#x|xxx|
+|x#x|xxx|xxx|
+|xxx|xxx|xx#|
+|-----------|
+|xxx|xxx|x#x|
+|#xx|xxx|xxx|
+|xxx|#xx|xxx|
+|-----------|
+|xxx|xx#|xxx|
+|xxx|xxx|#xx|
+|xx#|xxx|xxx|
++-----------+
+No replacement possible @area: 1,1
+No replacement possible @area: 4,1
+No replacement possible @area: 7,1
+No replacement possible @area: 1,4
+No replacement possible @area: 4,4
+No replacement possible @area: 7,4
+No replacement possible @area: 1,7
+No replacement possible @area: 4,7
+No replacement possible @area: 7,7
+final grid for 1
++-----------+
+|687|910|243|
+|913|427|860|
+|004|683|791|
+|-----------|
+|530|764|912|
+|160|090|437|
+|479|132|506|
+|-----------|
+|340|071|629|
+|726|349|100|
+|891|256|374|
++-----------+
+initial number: 2
++-----------+
+|687|910|243|
+|913|427|860|
+|004|683|791|
+|-----------|
+|530|764|912|
+|160|090|437|
+|479|132|506|
+|-----------|
+|340|071|629|
+|726|349|100|
+|891|256|374|
++-----------+
+hided number: 2
++-----------+
+|xxx|xxx|#xx|
+|xxx|x#x|xxx|
+|0x4|xxx|xxx|
+|-----------|
+|xxx|xxx|xx#|
+|1x0|xxx|xxx|
+|xxx|xx#|xxx|
+|-----------|
+|xxx|xxx|x#x|
+|x#x|xxx|xxx|
+|xxx|#xx|xxx|
++-----------+
+we can replace here!1,1
+--- START REPLACEMENT FOR:2 @center:1,1 ---
+Here is the area:
+[
+  'x', 'x', 'x', 'x',
+  'x', 'x', 0,   'x',
+  4
+]
+NOT REPLACEDx
+NOT REPLACEDx
+REPLACEMENT @: 0 2
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACED4
+--- END REPLACEMENT FOR:2 @center:1,1 ---
+No replacement possible @area: 4,1
+No replacement possible @area: 7,1
+we can replace here!1,4
+--- START REPLACEMENT FOR:2 @center:1,4 ---
+Here is the area:
+[
+  'x', 1,   'x', 'x',
+  'x', 'x', 'x', 0,
+  'x'
+]
+NOT REPLACEDx
+NOT REPLACED1
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+REPLACEMENT @: 2 4
+NOT REPLACEDx
+--- END REPLACEMENT FOR:2 @center:1,4 ---
+No replacement possible @area: 4,4
+No replacement possible @area: 7,4
+No replacement possible @area: 1,7
+No replacement possible @area: 4,7
+No replacement possible @area: 7,7
+final grid for 2
++-----------+
+|687|910|243|
+|913|427|860|
+|204|683|791|
+|-----------|
+|530|764|912|
+|162|090|437|
+|479|132|506|
+|-----------|
+|340|071|629|
+|726|349|100|
+|891|256|374|
++-----------+
+initial number: 2
++-----------+
+|687|910|243|
+|913|427|860|
+|204|683|791|
+|-----------|
+|530|764|912|
+|162|090|437|
+|479|132|506|
+|-----------|
+|340|071|629|
+|726|349|100|
+|891|256|374|
++-----------+
+hided number: 2
++-----------+
+|xxx|xxx|#xx|
+|xxx|x#x|xxx|
+|#xx|xxx|xxx|
+|-----------|
+|xxx|xxx|xx#|
+|xx#|xxx|xxx|
+|xxx|xx#|xxx|
+|-----------|
+|xxx|xxx|x#x|
+|x#x|xxx|xxx|
+|xxx|#xx|xxx|
++-----------+
+No replacement possible @area: 1,1
+No replacement possible @area: 4,1
+No replacement possible @area: 7,1
+No replacement possible @area: 1,4
+No replacement possible @area: 4,4
+No replacement possible @area: 7,4
+No replacement possible @area: 1,7
+No replacement possible @area: 4,7
+No replacement possible @area: 7,7
+final grid for 2
++-----------+
+|687|910|243|
+|913|427|860|
+|204|683|791|
+|-----------|
+|530|764|912|
+|162|090|437|
+|479|132|506|
+|-----------|
+|340|071|629|
+|726|349|100|
+|891|256|374|
++-----------+
+initial number: 2
++-----------+
+|687|910|243|
+|913|427|860|
+|204|683|791|
+|-----------|
+|530|764|912|
+|162|090|437|
+|479|132|506|
+|-----------|
+|340|071|629|
+|726|349|100|
+|891|256|374|
++-----------+
+hided number: 2
++-----------+
+|xxx|xxx|#xx|
+|xxx|x#x|xxx|
+|#xx|xxx|xxx|
+|-----------|
+|xxx|xxx|xx#|
+|xx#|xxx|xxx|
+|xxx|xx#|xxx|
+|-----------|
+|xxx|xxx|x#x|
+|x#x|xxx|xxx|
+|xxx|#xx|xxx|
++-----------+
+No replacement possible @area: 1,1
+No replacement possible @area: 4,1
+No replacement possible @area: 7,1
+No replacement possible @area: 1,4
+No replacement possible @area: 4,4
+No replacement possible @area: 7,4
+No replacement possible @area: 1,7
+No replacement possible @area: 4,7
+No replacement possible @area: 7,7
+final grid for 2
++-----------+
+|687|910|243|
+|913|427|860|
+|204|683|791|
+|-----------|
+|530|764|912|
+|162|090|437|
+|479|132|506|
+|-----------|
+|340|071|629|
+|726|349|100|
+|891|256|374|
++-----------+
+initial number: 3
++-----------+
+|687|910|243|
+|913|427|860|
+|204|683|791|
+|-----------|
+|530|764|912|
+|162|090|437|
+|479|132|506|
+|-----------|
+|340|071|629|
+|726|349|100|
+|891|256|374|
++-----------+
+hided number: 3
++-----------+
+|xxx|xxx|xx#|
+|xx#|xxx|xxx|
+|xxx|xx#|xxx|
+|-----------|
+|x#x|xxx|xxx|
+|xxx|xxx|x#x|
+|xxx|x#x|xxx|
+|-----------|
+|#xx|xxx|xxx|
+|xxx|#xx|xxx|
+|xxx|xxx|#xx|
++-----------+
+No replacement possible @area: 1,1
+No replacement possible @area: 4,1
+No replacement possible @area: 7,1
+No replacement possible @area: 1,4
+No replacement possible @area: 4,4
+No replacement possible @area: 7,4
+No replacement possible @area: 1,7
+No replacement possible @area: 4,7
+No replacement possible @area: 7,7
+final grid for 3
++-----------+
+|687|910|243|
+|913|427|860|
+|204|683|791|
+|-----------|
+|530|764|912|
+|162|090|437|
+|479|132|506|
+|-----------|
+|340|071|629|
+|726|349|100|
+|891|256|374|
++-----------+
+initial number: 4
++-----------+
+|687|910|243|
+|913|427|860|
+|204|683|791|
+|-----------|
+|530|764|912|
+|162|090|437|
+|479|132|506|
+|-----------|
+|340|071|629|
+|726|349|100|
+|891|256|374|
++-----------+
+hided number: 4
++-----------+
+|xxx|xxx|x#x|
+|xxx|#xx|xxx|
+|xx#|xxx|xxx|
+|-----------|
+|xxx|xx#|xxx|
+|xxx|xxx|#xx|
+|#xx|xxx|xxx|
+|-----------|
+|x#x|xxx|xxx|
+|xxx|x#x|xxx|
+|xxx|xxx|xx#|
++-----------+
+No replacement possible @area: 1,1
+No replacement possible @area: 4,1
+No replacement possible @area: 7,1
+No replacement possible @area: 1,4
+No replacement possible @area: 4,4
+No replacement possible @area: 7,4
+No replacement possible @area: 1,7
+No replacement possible @area: 4,7
+No replacement possible @area: 7,7
+final grid for 4
++-----------+
+|687|910|243|
+|913|427|860|
+|204|683|791|
+|-----------|
+|530|764|912|
+|162|090|437|
+|479|132|506|
+|-----------|
+|340|071|629|
+|726|349|100|
+|891|256|374|
++-----------+
+initial number: 5
++-----------+
+|687|910|243|
+|913|427|860|
+|204|683|791|
+|-----------|
+|530|764|912|
+|162|090|437|
+|479|132|506|
+|-----------|
+|340|071|629|
+|726|349|100|
+|891|256|374|
++-----------+
+hided number: 5
++-----------+
+|x87|9x0|x43|
+|x13|4x7|x60|
+|x04|6x3|x91|
+|-----------|
+|#xx|xxx|xxx|
+|x62|0x0|x37|
+|xxx|xxx|x#x|
+|-----------|
+|x40|0x1|x29|
+|x26|3x9|x00|
+|xxx|x#x|xxx|
++-----------+
+we can replace here!1,1
+--- START REPLACEMENT FOR:5 @center:1,1 ---
+Here is the area:
+[
+  'x', 8,   7, 'x', 1,
+  3,   'x', 0, 4
+]
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACED8
+NOT REPLACED1
+REPLACEMENT @: 1 2
+NOT REPLACED7
+NOT REPLACED3
+NOT REPLACED4
+--- END REPLACEMENT FOR:5 @center:1,1 ---
+we can replace here!4,1
+--- START REPLACEMENT FOR:5 @center:4,1 ---
+Here is the area:
+[
+  9,   4, 6, 'x', 'x',
+  'x', 0, 7, 3
+]
+NOT REPLACED9
+NOT REPLACED4
+NOT REPLACED6
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+REPLACEMENT @: 5 0
+NOT REPLACED7
+NOT REPLACED3
+--- END REPLACEMENT FOR:5 @center:4,1 ---
+we can replace here!7,1
+--- START REPLACEMENT FOR:5 @center:7,1 ---
+Here is the area:
+[
+  'x', 'x', 'x', 4, 6,
+  9,   3,   0,   1
+]
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACED4
+NOT REPLACED6
+NOT REPLACED9
+NOT REPLACED3
+REPLACEMENT @: 8 1
+NOT REPLACED1
+--- END REPLACEMENT FOR:5 @center:7,1 ---
+No replacement possible @area: 1,4
+No replacement possible @area: 4,4
+No replacement possible @area: 7,4
+we can replace here!1,7
+--- START REPLACEMENT FOR:5 @center:1,7 ---
+Here is the area:
+[
+  'x', 'x', 'x', 4,   2,
+  'x', 0,   6,   'x'
+]
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACED4
+NOT REPLACED2
+NOT REPLACEDx
+REPLACEMENT @: 2 6
+NOT REPLACED6
+NOT REPLACEDx
+--- END REPLACEMENT FOR:5 @center:1,7 ---
+No replacement possible @area: 4,7
+No replacement possible @area: 7,7
+final grid for 5
++-----------+
+|687|915|243|
+|913|427|865|
+|254|683|791|
+|-----------|
+|530|764|912|
+|162|090|437|
+|479|132|506|
+|-----------|
+|345|071|629|
+|726|349|100|
+|891|256|374|
++-----------+
+initial number: 5
++-----------+
+|687|915|243|
+|913|427|865|
+|254|683|791|
+|-----------|
+|530|764|912|
+|162|090|437|
+|479|132|506|
+|-----------|
+|345|071|629|
+|726|349|100|
+|891|256|374|
++-----------+
+hided number: 5
++-----------+
+|xxx|xx#|xxx|
+|xxx|xxx|xx#|
+|x#x|xxx|xxx|
+|-----------|
+|#xx|xxx|xxx|
+|xxx|0xx|x3x|
+|xxx|xxx|#xx|
+|-----------|
+|xx#|xxx|xxx|
+|xxx|3xx|x0x|
+|xxx|x#x|xxx|
++-----------+
+No replacement possible @area: 1,1
+No replacement possible @area: 4,1
+No replacement possible @area: 7,1
+No replacement possible @area: 1,4
+we can replace here!4,4
+--- START REPLACEMENT FOR:5 @center:4,4 ---
+Here is the area:
+[
+  'x', 0,   'x', 'x',
+  'x', 'x', 'x', 'x',
+  'x'
+]
+NOT REPLACEDx
+REPLACEMENT @: 3 4
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+--- END REPLACEMENT FOR:5 @center:4,4 ---
+No replacement possible @area: 7,4
+No replacement possible @area: 1,7
+No replacement possible @area: 4,7
+we can replace here!7,7
+--- START REPLACEMENT FOR:5 @center:7,7 ---
+Here is the area:
+[
+  'x', 'x', 'x', 'x',
+  0,   'x', 'x', 'x',
+  'x'
+]
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+REPLACEMENT @: 7 7
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+--- END REPLACEMENT FOR:5 @center:7,7 ---
+final grid for 5
++-----------+
+|687|915|243|
+|913|427|865|
+|254|683|791|
+|-----------|
+|530|764|912|
+|162|590|437|
+|479|132|506|
+|-----------|
+|345|071|629|
+|726|349|150|
+|891|256|374|
++-----------+
+initial number: 5
++-----------+
+|687|915|243|
+|913|427|865|
+|254|683|791|
+|-----------|
+|530|764|912|
+|162|590|437|
+|479|132|506|
+|-----------|
+|345|071|629|
+|726|349|150|
+|891|256|374|
++-----------+
+hided number: 5
++-----------+
+|xxx|xx#|xxx|
+|xxx|xxx|xx#|
+|x#x|xxx|xxx|
+|-----------|
+|#xx|xxx|xxx|
+|xxx|#xx|xxx|
+|xxx|xxx|#xx|
+|-----------|
+|xx#|xxx|xxx|
+|xxx|xxx|x#x|
+|xxx|x#x|xxx|
++-----------+
+No replacement possible @area: 1,1
+No replacement possible @area: 4,1
+No replacement possible @area: 7,1
+No replacement possible @area: 1,4
+No replacement possible @area: 4,4
+No replacement possible @area: 7,4
+No replacement possible @area: 1,7
+No replacement possible @area: 4,7
+No replacement possible @area: 7,7
+final grid for 5
++-----------+
+|687|915|243|
+|913|427|865|
+|254|683|791|
+|-----------|
+|530|764|912|
+|162|590|437|
+|479|132|506|
+|-----------|
+|345|071|629|
+|726|349|150|
+|891|256|374|
++-----------+
+initial number: 6
++-----------+
+|687|915|243|
+|913|427|865|
+|254|683|791|
+|-----------|
+|530|764|912|
+|162|590|437|
+|479|132|506|
+|-----------|
+|345|071|629|
+|726|349|150|
+|891|256|374|
++-----------+
+hided number: 6
++-----------+
+|#xx|xxx|xxx|
+|xxx|xxx|x#x|
+|xxx|#xx|xxx|
+|-----------|
+|xxx|x#x|xxx|
+|x#x|xxx|xxx|
+|xxx|xxx|xx#|
+|-----------|
+|xxx|xxx|#xx|
+|xx#|xxx|xxx|
+|xxx|xx#|xxx|
++-----------+
+No replacement possible @area: 1,1
+No replacement possible @area: 4,1
+No replacement possible @area: 7,1
+No replacement possible @area: 1,4
+No replacement possible @area: 4,4
+No replacement possible @area: 7,4
+No replacement possible @area: 1,7
+No replacement possible @area: 4,7
+No replacement possible @area: 7,7
+final grid for 6
++-----------+
+|687|915|243|
+|913|427|865|
+|254|683|791|
+|-----------|
+|530|764|912|
+|162|590|437|
+|479|132|506|
+|-----------|
+|345|071|629|
+|726|349|150|
+|891|256|374|
++-----------+
+initial number: 7
++-----------+
+|687|915|243|
+|913|427|865|
+|254|683|791|
+|-----------|
+|530|764|912|
+|162|590|437|
+|479|132|506|
+|-----------|
+|345|071|629|
+|726|349|150|
+|891|256|374|
++-----------+
+hided number: 7
++-----------+
+|xx#|xxx|xxx|
+|xxx|xx#|xxx|
+|xxx|xxx|#xx|
+|-----------|
+|xxx|#xx|xxx|
+|xxx|xxx|xx#|
+|x#x|xxx|xxx|
+|-----------|
+|xxx|x#x|xxx|
+|#xx|xxx|xxx|
+|xxx|xxx|x#x|
++-----------+
+No replacement possible @area: 1,1
+No replacement possible @area: 4,1
+No replacement possible @area: 7,1
+No replacement possible @area: 1,4
+No replacement possible @area: 4,4
+No replacement possible @area: 7,4
+No replacement possible @area: 1,7
+No replacement possible @area: 4,7
+No replacement possible @area: 7,7
+final grid for 7
++-----------+
+|687|915|243|
+|913|427|865|
+|254|683|791|
+|-----------|
+|530|764|912|
+|162|590|437|
+|479|132|506|
+|-----------|
+|345|071|629|
+|726|349|150|
+|891|256|374|
++-----------+
+initial number: 8
++-----------+
+|687|915|243|
+|913|427|865|
+|254|683|791|
+|-----------|
+|530|764|912|
+|162|590|437|
+|479|132|506|
+|-----------|
+|345|071|629|
+|726|349|150|
+|891|256|374|
++-----------+
+hided number: 8
++-----------+
+|x#x|xxx|xxx|
+|xxx|xxx|x#x|
+|xxx|x#x|xxx|
+|-----------|
+|xx0|7x4|x12|
+|xx2|5x0|x37|
+|xx9|1x2|x06|
+|-----------|
+|xx5|0x1|x29|
+|xx6|3x9|x50|
+|#xx|xxx|xxx|
++-----------+
+No replacement possible @area: 1,1
+No replacement possible @area: 4,1
+No replacement possible @area: 7,1
+we can replace here!1,4
+--- START REPLACEMENT FOR:8 @center:1,4 ---
+Here is the area:
+[
+  'x', 'x', 'x', 'x',
+  'x', 'x', 0,   2,
+  9
+]
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+REPLACEMENT @: 2 3
+NOT REPLACED2
+NOT REPLACED9
+--- END REPLACEMENT FOR:8 @center:1,4 ---
+we can replace here!4,4
+--- START REPLACEMENT FOR:8 @center:4,4 ---
+Here is the area:
+[
+  7,   5, 1, 'x', 'x',
+  'x', 4, 0, 2
+]
+NOT REPLACED7
+NOT REPLACED5
+NOT REPLACED1
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACED4
+REPLACEMENT @: 5 4
+NOT REPLACED2
+--- END REPLACEMENT FOR:8 @center:4,4 ---
+we can replace here!7,4
+--- START REPLACEMENT FOR:8 @center:7,4 ---
+Here is the area:
+[
+  'x', 'x', 'x', 1, 3,
+  0,   2,   7,   6
+]
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACED1
+NOT REPLACED3
+REPLACEMENT @: 7 5
+NOT REPLACED2
+NOT REPLACED7
+NOT REPLACED6
+--- END REPLACEMENT FOR:8 @center:7,4 ---
+No replacement possible @area: 1,7
+we can replace here!4,7
+--- START REPLACEMENT FOR:8 @center:4,7 ---
+Here is the area:
+[
+  0,   3, 'x', 'x', 'x',
+  'x', 1, 9,   'x'
+]
+REPLACEMENT @: 3 6
+NOT REPLACED3
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACED1
+NOT REPLACED9
+NOT REPLACEDx
+--- END REPLACEMENT FOR:8 @center:4,7 ---
+we can replace here!7,7
+--- START REPLACEMENT FOR:8 @center:7,7 ---
+Here is the area:
+[ 'x', 'x', 'x', 2, 5, 'x', 9, 0, undefined ]
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACEDx
+NOT REPLACED2
+NOT REPLACED5
+NOT REPLACEDx
+NOT REPLACED9
+REPLACEMENT @: 8 7
+NOT REPLACEDundefined
+--- END REPLACEMENT FOR:8 @center:7,7 ---
+final grid for 8
++-----------+
+|687|915|243|
+|913|427|865|
+|254|683|791|
+|-----------|
+|538|764|912|
+|162|598|437|
+|479|132|586|
+|-----------|
+|345|871|629|
+|726|349|158|
+|891|256|374|
++-----------+
+initial number: 8
++-----------+
+|687|915|243|
+|913|427|865|
+|254|683|791|
+|-----------|
+|538|764|912|
+|162|598|437|
+|479|132|586|
+|-----------|
+|345|871|629|
+|726|349|158|
+|891|256|374|
++-----------+
+hided number: 8
++-----------+
+|x#x|xxx|xxx|
+|xxx|xxx|#xx|
+|xxx|x#x|xxx|
+|-----------|
+|xx#|xxx|xxx|
+|xxx|xx#|xxx|
+|xxx|xxx|x#x|
+|-----------|
+|xxx|#xx|xxx|
+|xxx|xxx|xx#|
+|#xx|xxx|xxx|
++-----------+
+No replacement possible @area: 1,1
+No replacement possible @area: 4,1
+No replacement possible @area: 7,1
+No replacement possible @area: 1,4
+No replacement possible @area: 4,4
+No replacement possible @area: 7,4
+No replacement possible @area: 1,7
+No replacement possible @area: 4,7
+No replacement possible @area: 7,7
+final grid for 8
++-----------+
+|687|915|243|
+|913|427|865|
+|254|683|791|
+|-----------|
+|538|764|912|
+|162|598|437|
+|479|132|586|
+|-----------|
+|345|871|629|
+|726|349|158|
+|891|256|374|
++-----------+
+initial number: 8
++-----------+
+|687|915|243|
+|913|427|865|
+|254|683|791|
+|-----------|
+|538|764|912|
+|162|598|437|
+|479|132|586|
+|-----------|
+|345|871|629|
+|726|349|158|
+|891|256|374|
++-----------+
+hided number: 8
++-----------+
+|x#x|xxx|xxx|
+|xxx|xxx|#xx|
+|xxx|x#x|xxx|
+|-----------|
+|xx#|xxx|xxx|
+|xxx|xx#|xxx|
+|xxx|xxx|x#x|
+|-----------|
+|xxx|#xx|xxx|
+|xxx|xxx|xx#|
+|#xx|xxx|xxx|
++-----------+
+No replacement possible @area: 1,1
+No replacement possible @area: 4,1
+No replacement possible @area: 7,1
+No replacement possible @area: 1,4
+No replacement possible @area: 4,4
+No replacement possible @area: 7,4
+No replacement possible @area: 1,7
+No replacement possible @area: 4,7
+No replacement possible @area: 7,7
+final grid for 8
++-----------+
+|687|915|243|
+|913|427|865|
+|254|683|791|
+|-----------|
+|538|764|912|
+|162|598|437|
+|479|132|586|
+|-----------|
+|345|871|629|
+|726|349|158|
+|891|256|374|
++-----------+
+initial number: 9
++-----------+
+|687|915|243|
+|913|427|865|
+|254|683|791|
+|-----------|
+|538|764|912|
+|162|598|437|
+|479|132|586|
+|-----------|
+|345|871|629|
+|726|349|158|
+|891|256|374|
++-----------+
+hided number: 9
++-----------+
+|xxx|#xx|xxx|
+|#xx|xxx|xxx|
+|xxx|xxx|x#x|
+|-----------|
+|xxx|xxx|#xx|
+|xxx|x#x|xxx|
+|xx#|xxx|xxx|
+|-----------|
+|xxx|xxx|xx#|
+|xxx|xx#|xxx|
+|x#x|xxx|xxx|
++-----------+
+No replacement possible @area: 1,1
+No replacement possible @area: 4,1
+No replacement possible @area: 7,1
+No replacement possible @area: 1,4
+No replacement possible @area: 4,4
+No replacement possible @area: 7,4
+No replacement possible @area: 1,7
+No replacement possible @area: 4,7
+No replacement possible @area: 7,7
+final grid for 9
++-----------+
+|687|915|243|
+|913|427|865|
+|254|683|791|
+|-----------|
+|538|764|912|
+|162|598|437|
+|479|132|586|
+|-----------|
+|345|871|629|
+|726|349|158|
+|891|256|374|
++-----------+
+--- COUNTING 1 ---
+1 finded
+1 finded
+1 finded
+1 finded
+1 finded
+1 finded
+1 finded
+1 finded
+1 finded
+--- COUNTING 2 ---
+2 finded
+2 finded
+2 finded
+2 finded
+2 finded
+2 finded
+2 finded
+2 finded
+2 finded
+--- COUNTING 3 ---
+3 finded
+3 finded
+3 finded
+3 finded
+3 finded
+3 finded
+3 finded
+3 finded
+3 finded
+--- COUNTING 4 ---
+4 finded
+4 finded
+4 finded
+4 finded
+4 finded
+4 finded
+4 finded
+4 finded
+4 finded
+--- COUNTING 5 ---
+5 finded
+5 finded
+5 finded
+5 finded
+5 finded
+5 finded
+5 finded
+5 finded
+5 finded
+--- COUNTING 6 ---
+6 finded
+6 finded
+6 finded
+6 finded
+6 finded
+6 finded
+6 finded
+6 finded
+6 finded
+--- COUNTING 7 ---
+7 finded
+7 finded
+7 finded
+7 finded
+7 finded
+7 finded
+7 finded
+7 finded
+7 finded
+--- COUNTING 8 ---
+8 finded
+8 finded
+8 finded
+8 finded
+8 finded
+8 finded
+8 finded
+8 finded
+8 finded
+--- COUNTING 9 ---
+9 finded
+9 finded
+9 finded
+9 finded
+9 finded
+9 finded
+9 finded
+9 finded
+9 finded
+[
+  [], [], [], [], [],
+  [], [], [], []
+]
+Nb of Runs: 2
+~~~~ DONE! ~~~~
+Finished sudoku
++-----------+
+|687|915|243|
+|913|427|865|
+|254|683|791|
+|-----------|
+|538|764|912|
+|162|598|437|
+|479|132|586|
+|-----------|
+|345|871|629|
+|726|349|158|
+|891|256|374|
++-----------+
