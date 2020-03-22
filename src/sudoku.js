@@ -1,17 +1,21 @@
-const data = require('./sudokuData')
 const colors = require('colors')
+const {checkCol, checkRow, checkArea} = require('./rules')
 
 class Sudoku{
 
-    constructor(sudoku){
-        this.sudoku = sudoku
+    constructor(grid){
+        this.grid = grid
     }
 
-    displaySudoku = function(){
-    console.log("All sudoku".red.bold)
+    displayGrid = function(title){
+        if(title){
+            console.log(title.red.bold)
+        }else{
+            console.log("All sudoku".red.bold)
+        }
     console.log("+-----------+".red.bold)
     for (let x = 0; x < 9; x++) {
-        var str = this.sudoku[x].join().replace(/,/g,"")
+        var str = this.grid[x].join().replace(/,/g,"")
         str = "|".red.bold+str.slice(0,3)+"|".red.bold+str.slice(3,6)+"|".red.bold+str.slice(-3)+"|".red.bold
         console.log(str)
         if (x === 2){
@@ -26,15 +30,15 @@ class Sudoku{
 
     displayRow = function(x){
         console.log(`row@${x}:`.red.bold)
-        console.log(`${this.sudoku[x].join().replace(/,/g," ").yellow}`)
+        console.log(`${this.grid[x].join().replace(/,/g," ").yellow}`)
     }
     displayCol = function(y){
         console.log(`col@${y}: `.red.bold)
         for (let x = 0; x < 9; x++) {
             if(x===0){
-                console.log(`${this.sudoku[x][y]}`.yellow)
+                console.log(`${this.grid[x][y]}`.yellow)
             }else{
-                console.log(`${this.sudoku[x][y]}`.yellow)
+                console.log(`${this.grid[x][y]}`.yellow)
             }
         }
     }
@@ -46,19 +50,19 @@ class Sudoku{
         }
         for (let scanX = 0; scanX < 9; scanX++) {
             if(scanX===x){
-                console.log(this.sudoku[x].join().replace(/,/g," ").yellow)
+                console.log(this.grid[x].join().replace(/,/g," ").yellow)
             }else{
-                console.log(space+`${this.sudoku[scanX][y]}`.yellow)
+                console.log(space+`${this.grid[scanX][y]}`.yellow)
             }
         }
     }
     getRow = function(x){
-        return this.sudoku[x]
+        return this.grid[x]
     }
     getCol = function(y){
         var col = []
         for (let x = 0; x < 9; x++) {
-            col.push(this.sudoku[x][y])
+            col.push(this.grid[x][y])
         }
         return col
     }
@@ -68,21 +72,21 @@ class Sudoku{
             if(y>=0&&y<3){
                 for(let i = 0; (i>=0&&i<3) ;i++){
                     for(let j = 0; (j>=0&&j<3) ;j++){
-                        area.push(this.sudoku[i][j])
+                        area.push(this.grid[i][j])
                     }
                 }
                 return area
             }else if(y>=3&&y<6){
                 for(let i = 0; (i>=0&&i<3) ;i++){
                     for(let j = 3; (j>=3&&j<6) ;j++){
-                        area.push(this.sudoku[j][i])
+                        area.push(this.grid[j][i])
                     }
                 }
                 return area
             }else{
                 for(let i = 0; (i>=0&&i<3) ;i++){
                     for(let j = 6; (j>=6&&j<9) ;j++){
-                        area.push(this.sudoku[j][i])
+                        area.push(this.grid[j][i])
                     }
                 }
                 return area
@@ -91,21 +95,21 @@ class Sudoku{
             if(y>=0&&y<3){
                 for(let i = 3; (i>=3&&i<6) ;i++){
                     for(let j = 0; (j>=0&&j<3) ;j++){
-                        area.push(this.sudoku[j][i])
+                        area.push(this.grid[j][i])
                     }
                 }
                 return area
             }else if(y>=3&&y<6){
                 for(let i = 3; (i>=3&&i<6) ;i++){
                     for(let j = 3; (j>=3&&j<6) ;j++){
-                        area.push(this.sudoku[j][i])
+                        area.push(this.grid[j][i])
                     }
                 }
                 return area
             }else{
                 for(let i = 3; (i>=3&&i<6) ;i++){
                     for(let j = 6; (j>=6&&j<9) ;j++){
-                        area.push(this.sudoku[j][i])
+                        area.push(this.grid[j][i])
                     }
                 }
                 return area
@@ -114,30 +118,29 @@ class Sudoku{
             if(y>=0&&y<3){
                 for(let i = 6; (i>=6&&i<9) ;i++){
                     for(let j = 0; (j>=0&&j<3) ;j++){
-                        area.push(this.sudoku[j][i])
+                        area.push(this.grid[j][i])
                     }
                 }
                 return area
             }else if(y>=3&&y<6){
                 for(let i = 6; (i>=6&&i<9) ;i++){
                     for(let j = 3; (j>=3&&j<6) ;j++){
-                        area.push(this.sudoku[j][i])
+                        area.push(this.grid[j][i])
                     }
                 }
                 return area
             }else{
                 for(let i = 6; (i>=6&&i<9) ;i++){
                     for(let j = 6; (j>=6&&j<9) ;j++){
-                        area.push(this.sudoku[j][i])
+                        area.push(this.grid[j][i])
                     }
                 }
                 return area
             }
         }
     }
-    set setPos(params){
-        this.sudoku[params[0]][params[1]] = params[2]
-    }
 }
 
 module.exports = Sudoku
+
+//console.log(Sudoku)
