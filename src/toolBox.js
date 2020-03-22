@@ -18,40 +18,65 @@ const replaceCol = function(obj, x) {
 }
 
 const canWePlace = function(area){
-    var str = area.join().replace(/,/g,"").replace(/x/g,"")
-    if(str.length===1 && str==="0"){return true}
+    var str = area.join().replace(/,|x|1|6|2|3|4|5|6|7|8|9/g,"")
+    if(str==="0"){return true}
 }
 
+//const scanPossibilities = function(sudoku, n) {
+//    var centers = [[1,1],[4,1],[7,1],[1,4],[4,4],[7,4],[1,7],[4,7],[7,7]]
+//    for(let scanX = 0; scanX<9 ; scanX++){
+//        for(let scanY = 0; scanY<9 ; scanY++){
+//            if(sudoku.grid[scanY][scanX] === n){
+//                replaceCol(sudoku, scanX)
+//                replaceRow(sudoku, scanY)
+//                sudoku.grid[scanY][scanX] = n
+//            }
+//        }
+//    }
+//    centers.forEach(center => { 
+//        if(canWePlace(sudoku.getArea(center[0],center[1]))){
+//            console.log(sudoku.getArea(center[0],center[1]))
+//            console.log("we can replace !".green)
+//        }else{
+//            console.log("No replacement possible @: "+center)
+//        }
+//    })
+//}
 
 
 
+/*
+for(let i = 1; i < 9; i++ ){
+    const copiedSudoku = copy(mySudok.grid)
+    copiedSudoku.displayGrid(`${i}`)
+    scanPossibilities(copiedSudoku, i)
+    console.log("--- END ---".red)
+    
+}
+*/
 const mySudok = new Sudoku(grid)
-const mySudok2 = copy(mySudok.grid)
-
-var n = 2
+const copiedSudoku = copy(mySudok.grid)
+var n = 9
 var centers = [[1,1],[4,1],[7,1],[1,4],[4,4],[7,4],[1,7],[4,7],[7,7]]
 
+copiedSudoku.displayGrid("initial number: "+n)
 for(let scanX = 0; scanX<9 ; scanX++){
     for(let scanY = 0; scanY<9 ; scanY++){
-        if(mySudok2.grid[scanY][scanX] === n){
-            replaceCol(mySudok2, scanX)
-            replaceRow(mySudok2, scanY)
-            mySudok2.grid[scanY][scanX] = n
+        if(copiedSudoku.grid[scanY][scanX] === n){
+            replaceCol(copiedSudoku, scanX)
+            replaceRow(copiedSudoku, scanY)
+            copiedSudoku.grid[scanY][scanX] = "#"
         }
     }
 }
-
-mySudok2.displayGrid()
-
+copiedSudoku.displayGrid("hided number: "+n)
 centers.forEach(center => { 
-    if(canWePlace(mySudok2.getArea(center[0],center[1]))){
-        console.log(mySudok2.getArea(center[0],center[1]))
-        console.log("we can replace !")
+    if(canWePlace(copiedSudoku.getArea(center[0],center[1]))){
+        console.log(copiedSudoku.getArea(center[0],center[1]))
+        console.log("we can replace ! @ ".green+center)
     }else{
         console.log("No replacement possible @: "+center)
+        //console.log(copiedSudoku.getArea(center[0],center[1]))
     }
 })
 
-
-//mySudok.displayGrid()
-//mySudok2.displayGrid()
