@@ -1,4 +1,4 @@
-const { checkCol, checkRow, checkArea } = require('./rules');
+const { testCol, testRow, testArea } = require('./rules');
 const ToolBox = require('./toolBox')
 
 const {grid} = require('./sudokuData')
@@ -6,13 +6,26 @@ const Sudoku = require('./sudoku')
 
 const myTooBox = new ToolBox()
 
-//Sudoku.prototype.checkRow = checkRow
-//Sudoku.prototype.checkCol = checkCol
-//Sudoku.prototype.checkArea = checkArea
+Sudoku.prototype.testCol = testCol
+Sudoku.prototype.testRow = testRow
+Sudoku.prototype.testArea = testArea
 
 //mySudok.tools = getRowFromToolBox.bind(mySudok); for mod one object
 
 const mySudok = new Sudoku(grid)
+
+var numbers = []
+
+const numbersInit = ()=>{
+    for(let i = 1; i<10 ; i++){
+        numbers[i]=[i,i,i,i,i,i,i,i,i]
+    }
+    numbers.shift()
+    //console.log("initial conditions builded as:")
+    //console.log(numbers.join().bgMagenta)
+}
+
+numbersInit()
 
 var n = 9
 var centers = [[1,1],[4,1],[7,1],[1,4],[4,4],[7,4],[1,7],[4,7],[7,7]]
@@ -43,7 +56,46 @@ const solveN = function(originalSudoku, n){
     return (count === 0) ? true : false
 }
 
-solveN(mySudok, n) ? console.log("on ne peut pas aller plus loin !".green) : console.log("il y a encore des étapes...".red)
-solveN(mySudok, n) ? console.log("on ne peut pas aller plus loin !".green) : console.log("il y a encore des étapes...".red)
+const findAllN = (n) =>{
+    //n goes from 1 to 9
+    for(let scanX = 0; scanX<9 ; scanX++){
+        for(let scanY = 0; scanY<9 ; scanY++){
+            if(mySudok.grid[scanY][scanX]===n){
+                console.log(n+" finded".red)
+                numbers[n-1].pop()
+            }
+        }
+    }
+    
+} 
+const showRemaining = (numbers)=>{
+    numbers.forEach((element, index)=>{
+        console.log(`"--- ${index+1}'s ---`)
+        console.log(`${index+1}`.bgRed)
+        findAllN(index+1)
+        console.log(element)
+        console.log("--- end ---")
+    })
+}
+const testRemaining = (numbers)=>{
+    numbers = numbers.filter((val)=>{return val.length})
+    return (numbers.length) ? false : true
+}
+
+/*
+while(numbers.length){
+    numbers.forEach((num)=>{
+        if(!solveN(mySudok, num)){
+            while(!solveN(mySudok, num)){
+
+            }
+        }
+        
+    })
+
+ }
+*/
+
+
 
 
