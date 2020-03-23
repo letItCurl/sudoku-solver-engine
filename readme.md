@@ -1,3 +1,4 @@
 #  SUDOKU SOLVER ENGINE
 
-***Currently in development***
+***Development paused***
+***Front-end currently in development***
