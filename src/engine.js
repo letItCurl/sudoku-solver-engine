@@ -8,7 +8,7 @@ const _ = require('underscore')
 //mySudok.tools = getRowFromToolBox.bind(mySudok); for mod one object
 
 const ToolBox = require('./toolBox')
-const {grid} = require('./sudokuData2')
+const {grid} = require('./sudokuData')
 const Sudoku = require('./sudoku')
 
 const myTooBox = new ToolBox()
