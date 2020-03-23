@@ -16,10 +16,11 @@ class Engine{
         this.store = [],
         this.centers = [[1,1],[4,1],[7,1],[1,4],[4,4],[7,4],[1,7],[4,7],[7,7]],
         this.sudoku = sudoku,
-        this.toolBox = toolBox
-
+        this.toolBox = toolBox,
+        this.logs = []
     }
     init = function(){
+        //this function fills numbers[] with all the the numbers
         this.numbers = []
         this.numbers = []
         for(let i = 1; i<10 ; i++){
@@ -28,29 +29,42 @@ class Engine{
         this.numbers.shift()
     }
     solveN = function(n){
-        var count = 0
+        //take a number from 1 to 9
+        var count = 0 // use to check nb of iteration done
+        var msg = []
+        //copy the sudoku
         const refSudoku = this.toolBox.copy(this.sudoku.grid)
-        refSudoku.displayGrid("initial number: "+n)
+        //hide with "x" all cross and areas of a given number N
         this.toolBox.hideImpossibilities(refSudoku, n)
-        refSudoku.displayGrid("hided number: "+n)
-        
-        this.centers.forEach(center => { 
+        //scan all centers
+        this.centers.forEach(center => {
+            //if the area has one 0, then we place the N number in the given place
             if(this.toolBox.canWePlace(refSudoku.getArea(center[0],center[1]))){
-                console.log("we can replace here!".green+center)
-                console.log(`--- START REPLACEMENT FOR:${n} @center:${center} ---`.magenta)
-                console.log("Here is the area:")
-                console.log(refSudoku.getArea(center[0],center[1]))
-                this.toolBox.scanAreaAndReplaceZero(refSudoku ,this.sudoku, center, n)
-                console.log(`--- END REPLACEMENT FOR:${n} @center:${center} ---`.magenta)
+                //scan the area,place a number in this.sudoku
+                msg.push(`--->REPLACEMENT FOR: ${n}'s @center: ${center}`)
+                this.toolBox.scanAreaAndReplaceZero(refSudoku ,this.sudoku, center, n, msg)
                 count ++;
-        
             }else{
-                console.log("No replacement possible @area: "+center)
+                msg.push("NO REPLACEMENT POSSIBLE @AREA: "+center)
             }
         })
-        
-        this.sudoku.displayGrid("final grid for "+n)
-        return (count === 0) ? true : false
+        //return (count === 0) ? true : false
+        if(count === 0){
+            msg.push(`NO MORE REPLACEMENT POSSIBLE FOR ${n}'s`)
+            this.logs.push({
+                actionName: "solveN", 
+                sudoku: this.toolBox.returnData(this.sudoku.grid), 
+                messages: msg})
+            return true
+        }else{
+            msg.push(`TESTING MORE REPLACEMENT FOR ${n}'s`)
+            this.logs.push({
+                actionName: "solveN", 
+                sudoku: this.toolBox.returnData(this.sudoku.grid),
+                //state:  this.toolBox.returnData(this.state),
+                messages: msg})
+            return false
+        }
     }
     testPos = function(i, j){
         for(let scanI = 0; scanI<this.store.length ; scanI++){
@@ -61,12 +75,13 @@ class Engine{
     }
     findAllNAndPop = function(n){
         //n goes from 1 to 9
-        console.log(`--- COUNTING ${n} ---`)
+        var msg = {}
+        msg.push(`--- COUNTING ${n}'s ---`)
         for(let scanX = 0; scanX<9 ; scanX++){
             for(let scanY = 0; scanY<9 ; scanY++){
                 if(this.sudoku.grid[scanY][scanX]===n){
                     console.log(n+" finded".green)
-    
+                    
                     if(!this.testPos(scanY,scanX)){
                         this.store.push([scanY,scanX])
                         this.numbers[n-1].pop()
@@ -74,6 +89,11 @@ class Engine{
                 }
             }
         } 
+        this.logs.push({
+            actionName: "findAllNAndPop", 
+            sudoku: this.toolBox.returnData(this.sudoku.grid),
+            state:  this.toolBox.returnData(this.state), 
+            messages: msg})
     }
     // THIS JUST CHECKS ! NOT GENERAL MODIFICATIONS !
     stopCondition = (numbers)=>{
@@ -112,6 +132,6 @@ mySudok.displayGrid("Initial sudoku")
 myEngine = new Engine(mySudok, myTooBox)
 myEngine.solveAll()
 mySudok.displayGrid("Finished sudoku")
-console.log(myEngine.store.length)
+console.log(myEngine.logs[6])
 
 

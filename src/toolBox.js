@@ -9,8 +9,8 @@ class ToolBox{
     copy = function(data) {
         return new Sudoku (JSON.parse(JSON.stringify(data)))
     }
-    returnSudoku = function(obj) {
-        return (JSON.parse(JSON.stringify(obj.grid)))
+    returnData = function(data) {
+        return (JSON.parse(JSON.stringify(data)))
     }
     replaceRow = function(obj, y) {
         obj.grid[y] = ["x","x","x","x","x","x","x","x"]
@@ -26,14 +26,15 @@ class ToolBox{
         if(str==="0"){return true}
     }
     
-    scanAreaAndReplaceZero = function(ref, obj, center, val){
+    scanAreaAndReplaceZero = function(ref, obj, center, val, msg){
         for(let i = center[0]-1; i < center[0]+2; i++){
             for(let j = center[1]-1; j < center[1]+2; j++){
                 if(ref.grid[j][i]===0){
                     obj.grid[j][i]=val
-                    console.log("REPLACEMENT".green+" @: "+i+" "+j)
+                    //console.log("REPLACEMENT".green+" @: "+i+" "+j)
+                    msg.push(`--->POS REPLACED: ${i},${i}`)
                 }else{
-                    console.log("NOT REPLACED".yellow + ref.grid[j][i])
+                    //console.log("NOT REPLACED".yellow + ref.grid[j][i])
                 }
             }
         }
