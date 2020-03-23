@@ -4,16 +4,11 @@ const _ = require('underscore')
 //Sudoku.prototype.testCol = testCol
 //Sudoku.prototype.testRow = testRow
 //Sudoku.prototype.testArea = testArea
-
 //mySudok.tools = getRowFromToolBox.bind(mySudok); for mod one object
 
 const ToolBox = require('./toolBox')
 const {grid} = require('./sudokuData')
 const Sudoku = require('./sudoku')
-
-var numbers = [] // done
-var store = [] // done
-var centers = [[1,1],[4,1],[7,1],[1,4],[4,4],[7,4],[1,7],[4,7],[7,7]]
 
 class Engine{
     constructor(sudoku, toolBox){
@@ -98,7 +93,7 @@ class Engine{
                 }
             })
             this.numbers.forEach((element,index) =>{
-                this.findAllNAndPop(index+1, numbers)
+                this.findAllNAndPop(index+1, this.numbers)
             })
             run ++
         }
@@ -108,17 +103,7 @@ class Engine{
     }
     
 }
-
-const showRemaining = ()=>{
-    numbers.forEach((element, index)=>{
-        console.log(`"--- ${index+1}'s ---`)
-        console.log(`${index+1}`.bgRed)
-        findAllN(index+1)
-        console.log(element)
-        console.log("--- end ---")
-    })
-}
-
+module.exports = Engine
 
 const myTooBox = new ToolBox()
 const mySudok = new Sudoku(grid)
