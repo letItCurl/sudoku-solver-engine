@@ -50,7 +50,16 @@ class ToolBox{
             }
         }
     }
-
+    writeLogsToFile = function (obj, name){
+        var fs = require("fs")
+        fs.writeFile(`./src/outputs/json/${name}.json`, JSON.stringify(obj), (err) => {
+            if (err) {
+                console.error(err)
+                return;
+            };
+            console.log("File ./src/outputs/json/"+name+".json has been created");
+        });
+    }
 }
 
 module.exports = ToolBox

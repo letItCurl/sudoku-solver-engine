@@ -1,0 +1,1961 @@
+Initial sudoku
++-----------+
+|607|900|203|
+|903|420|860|
+|000|083|001|
+|-----------|
+|530|060|902|
+|000|000|037|
+|400|132|500|
+|-----------|
+|040|070|609|
+|720|000|000|
+|891|250|070|
++-----------+
+Finished sudoku
++-----------+
+|687|915|243|
+|913|427|865|
+|254|683|791|
+|-----------|
+|538|764|912|
+|162|598|437|
+|479|132|586|
+|-----------|
+|345|871|629|
+|726|349|158|
+|891|256|374|
++-----------+
+here are the logs of the engine !
+[
+  {
+    actionName: 'solveN',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    messages: [
+      'NO REPLACEMENT POSSIBLE @AREA: 1,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,7',
+      "NO MORE REPLACEMENT POSSIBLE FOR 1's"
+    ]
+  },
+  {
+    actionName: 'solveN',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    messages: [
+      'NO REPLACEMENT POSSIBLE @AREA: 1,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,7',
+      "--->REPLACEMENT FOR: 2's @center: 7,7",
+      '--->POS REPLACED: 7,7',
+      "TESTING MORE REPLACEMENT FOR 2's"
+    ]
+  },
+  {
+    actionName: 'solveN',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    messages: [
+      'NO REPLACEMENT POSSIBLE @AREA: 1,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,7',
+      "NO MORE REPLACEMENT POSSIBLE FOR 2's"
+    ]
+  },
+  {
+    actionName: 'solveN',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    messages: [
+      'NO REPLACEMENT POSSIBLE @AREA: 1,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,7',
+      "NO MORE REPLACEMENT POSSIBLE FOR 2's"
+    ]
+  },
+  {
+    actionName: 'solveN',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    messages: [
+      'NO REPLACEMENT POSSIBLE @AREA: 1,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,4',
+      "--->REPLACEMENT FOR: 3's @center: 1,7",
+      '--->POS REPLACED: 0,0',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,7',
+      "TESTING MORE REPLACEMENT FOR 3's"
+    ]
+  },
+  {
+    actionName: 'solveN',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    messages: [
+      'NO REPLACEMENT POSSIBLE @AREA: 1,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,7',
+      "--->REPLACEMENT FOR: 3's @center: 4,7",
+      '--->POS REPLACED: 3,3',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,7',
+      "TESTING MORE REPLACEMENT FOR 3's"
+    ]
+  },
+  {
+    actionName: 'solveN',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    messages: [
+      'NO REPLACEMENT POSSIBLE @AREA: 1,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,7',
+      "--->REPLACEMENT FOR: 3's @center: 7,7",
+      '--->POS REPLACED: 6,6',
+      "TESTING MORE REPLACEMENT FOR 3's"
+    ]
+  },
+  {
+    actionName: 'solveN',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    messages: [
+      'NO REPLACEMENT POSSIBLE @AREA: 1,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,7',
+      "NO MORE REPLACEMENT POSSIBLE FOR 3's"
+    ]
+  },
+  {
+    actionName: 'solveN',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    messages: [
+      'NO REPLACEMENT POSSIBLE @AREA: 1,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,7',
+      "NO MORE REPLACEMENT POSSIBLE FOR 3's"
+    ]
+  },
+  {
+    actionName: 'solveN',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    messages: [
+      "--->REPLACEMENT FOR: 4's @center: 1,1",
+      '--->POS REPLACED: 2,2',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,7',
+      "TESTING MORE REPLACEMENT FOR 4's"
+    ]
+  },
+  {
+    actionName: 'solveN',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    messages: [
+      'NO REPLACEMENT POSSIBLE @AREA: 1,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,1',
+      "--->REPLACEMENT FOR: 4's @center: 7,1",
+      '--->POS REPLACED: 7,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,7',
+      "TESTING MORE REPLACEMENT FOR 4's"
+    ]
+  },
+  {
+    actionName: 'solveN',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    messages: [
+      'NO REPLACEMENT POSSIBLE @AREA: 1,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,4',
+      "--->REPLACEMENT FOR: 4's @center: 7,4",
+      '--->POS REPLACED: 6,6',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,7',
+      "TESTING MORE REPLACEMENT FOR 4's"
+    ]
+  },
+  {
+    actionName: 'solveN',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    messages: [
+      'NO REPLACEMENT POSSIBLE @AREA: 1,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,4',
+      "--->REPLACEMENT FOR: 4's @center: 4,4",
+      '--->POS REPLACED: 5,5',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,7',
+      "TESTING MORE REPLACEMENT FOR 4's"
+    ]
+  },
+  {
+    actionName: 'solveN',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    messages: [
+      'NO REPLACEMENT POSSIBLE @AREA: 1,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,7',
+      "--->REPLACEMENT FOR: 4's @center: 4,7",
+      '--->POS REPLACED: 4,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,7',
+      "TESTING MORE REPLACEMENT FOR 4's"
+    ]
+  },
+  {
+    actionName: 'solveN',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    messages: [
+      'NO REPLACEMENT POSSIBLE @AREA: 1,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,7',
+      "--->REPLACEMENT FOR: 4's @center: 7,7",
+      '--->POS REPLACED: 8,8',
+      "TESTING MORE REPLACEMENT FOR 4's"
+    ]
+  },
+  {
+    actionName: 'solveN',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    messages: [
+      'NO REPLACEMENT POSSIBLE @AREA: 1,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,7',
+      "NO MORE REPLACEMENT POSSIBLE FOR 4's"
+    ]
+  },
+  {
+    actionName: 'solveN',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    messages: [
+      'NO REPLACEMENT POSSIBLE @AREA: 1,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,7',
+      "NO MORE REPLACEMENT POSSIBLE FOR 5's"
+    ]
+  },
+  {
+    actionName: 'solveN',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    messages: [
+      'NO REPLACEMENT POSSIBLE @AREA: 1,1',
+      "--->REPLACEMENT FOR: 6's @center: 4,1",
+      '--->POS REPLACED: 3,3',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,4',
+      "--->REPLACEMENT FOR: 6's @center: 7,4",
+      '--->POS REPLACED: 8,8',
+      "--->REPLACEMENT FOR: 6's @center: 1,7",
+      '--->POS REPLACED: 2,2',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,7',
+      "TESTING MORE REPLACEMENT FOR 6's"
+    ]
+  },
+  {
+    actionName: 'solveN',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    messages: [
+      'NO REPLACEMENT POSSIBLE @AREA: 1,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,1',
+      "--->REPLACEMENT FOR: 6's @center: 1,4",
+      '--->POS REPLACED: 1,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,7',
+      "--->REPLACEMENT FOR: 6's @center: 4,7",
+      '--->POS REPLACED: 5,5',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,7',
+      "TESTING MORE REPLACEMENT FOR 6's"
+    ]
+  },
+  {
+    actionName: 'solveN',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    messages: [
+      'NO REPLACEMENT POSSIBLE @AREA: 1,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,7',
+      "NO MORE REPLACEMENT POSSIBLE FOR 6's"
+    ]
+  },
+  {
+    actionName: 'solveN',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    messages: [
+      'NO REPLACEMENT POSSIBLE @AREA: 1,1',
+      "--->REPLACEMENT FOR: 7's @center: 4,1",
+      '--->POS REPLACED: 5,5',
+      "--->REPLACEMENT FOR: 7's @center: 7,1",
+      '--->POS REPLACED: 6,6',
+      "--->REPLACEMENT FOR: 7's @center: 1,4",
+      '--->POS REPLACED: 1,1',
+      "--->REPLACEMENT FOR: 7's @center: 4,4",
+      '--->POS REPLACED: 3,3',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,7',
+      "TESTING MORE REPLACEMENT FOR 7's"
+    ]
+  },
+  {
+    actionName: 'solveN',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    messages: [
+      'NO REPLACEMENT POSSIBLE @AREA: 1,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,7',
+      "NO MORE REPLACEMENT POSSIBLE FOR 7's"
+    ]
+  },
+  {
+    actionName: 'solveN',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    messages: [
+      'NO REPLACEMENT POSSIBLE @AREA: 1,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,7',
+      "NO MORE REPLACEMENT POSSIBLE FOR 7's"
+    ]
+  },
+  {
+    actionName: 'solveN',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    messages: [
+      "--->REPLACEMENT FOR: 8's @center: 1,1",
+      '--->POS REPLACED: 1,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,7',
+      "TESTING MORE REPLACEMENT FOR 8's"
+    ]
+  },
+  {
+    actionName: 'solveN',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    messages: [
+      'NO REPLACEMENT POSSIBLE @AREA: 1,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,7',
+      "NO MORE REPLACEMENT POSSIBLE FOR 8's"
+    ]
+  },
+  {
+    actionName: 'solveN',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    messages: [
+      'NO REPLACEMENT POSSIBLE @AREA: 1,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,7',
+      "NO MORE REPLACEMENT POSSIBLE FOR 8's"
+    ]
+  },
+  {
+    actionName: 'solveN',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    messages: [
+      'NO REPLACEMENT POSSIBLE @AREA: 1,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,1',
+      "--->REPLACEMENT FOR: 9's @center: 7,1",
+      '--->POS REPLACED: 7,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,7',
+      "--->REPLACEMENT FOR: 9's @center: 4,7",
+      '--->POS REPLACED: 5,5',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,7',
+      "TESTING MORE REPLACEMENT FOR 9's"
+    ]
+  },
+  {
+    actionName: 'solveN',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    messages: [
+      'NO REPLACEMENT POSSIBLE @AREA: 1,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,4',
+      "--->REPLACEMENT FOR: 9's @center: 4,4",
+      '--->POS REPLACED: 4,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,7',
+      "TESTING MORE REPLACEMENT FOR 9's"
+    ]
+  },
+  {
+    actionName: 'solveN',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    messages: [
+      'NO REPLACEMENT POSSIBLE @AREA: 1,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,1',
+      "--->REPLACEMENT FOR: 9's @center: 1,4",
+      '--->POS REPLACED: 2,2',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,7',
+      "TESTING MORE REPLACEMENT FOR 9's"
+    ]
+  },
+  {
+    actionName: 'solveN',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    messages: [
+      'NO REPLACEMENT POSSIBLE @AREA: 1,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,7',
+      "NO MORE REPLACEMENT POSSIBLE FOR 9's"
+    ]
+  },
+  {
+    actionName: 'solveN',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    messages: [
+      'NO REPLACEMENT POSSIBLE @AREA: 1,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,7',
+      "NO MORE REPLACEMENT POSSIBLE FOR 9's"
+    ]
+  },
+  {
+    actionName: 'findAllNAndPop',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    messages: [
+      "--- COUNTING 1's ---",
+      "--- NEW 1 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 1 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 1 FINDED, N's COUNT UPDATED ---",
+      "--- 1's COUNTED ---"
+    ]
+  },
+  {
+    actionName: 'findAllNAndPop',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    messages: [
+      "--- COUNTING 2's ---",
+      "--- NEW 2 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 2 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 2 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 2 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 2 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 2 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 2 FINDED, N's COUNT UPDATED ---",
+      "--- 2's COUNTED ---"
+    ]
+  },
+  {
+    actionName: 'findAllNAndPop',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [],      [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    messages: [
+      "--- COUNTING 3's ---",
+      "--- NEW 3 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 3 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 3 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 3 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 3 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 3 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 3 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 3 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 3 FINDED, N's COUNT UPDATED ---",
+      "--- 3's COUNTED ---"
+    ]
+  },
+  {
+    actionName: 'findAllNAndPop',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [],      [],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    messages: [
+      "--- COUNTING 4's ---",
+      "--- NEW 4 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 4 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 4 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 4 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 4 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 4 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 4 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 4 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 4 FINDED, N's COUNT UPDATED ---",
+      "--- 4's COUNTED ---"
+    ]
+  },
+  {
+    actionName: 'findAllNAndPop',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [],      [],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    messages: [
+      "--- COUNTING 5's ---",
+      "--- NEW 5 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 5 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 5 FINDED, N's COUNT UPDATED ---",
+      "--- 5's COUNTED ---"
+    ]
+  },
+  {
+    actionName: 'findAllNAndPop',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [],      [],
+      [Array], [],
+      [Array], [Array],
+      [Array]
+    ],
+    messages: [
+      "--- COUNTING 6's ---",
+      "--- NEW 6 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 6 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 6 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 6 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 6 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 6 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 6 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 6 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 6 FINDED, N's COUNT UPDATED ---",
+      "--- 6's COUNTED ---"
+    ]
+  },
+  {
+    actionName: 'findAllNAndPop',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [],      [],
+      [Array], [],
+      [],      [Array],
+      [Array]
+    ],
+    messages: [
+      "--- COUNTING 7's ---",
+      "--- NEW 7 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 7 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 7 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 7 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 7 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 7 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 7 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 7 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 7 FINDED, N's COUNT UPDATED ---",
+      "--- 7's COUNTED ---"
+    ]
+  },
+  {
+    actionName: 'findAllNAndPop',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [],      [],
+      [Array], [],
+      [],      [Array],
+      [Array]
+    ],
+    messages: [
+      "--- COUNTING 8's ---",
+      "--- NEW 8 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 8 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 8 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 8 FINDED, N's COUNT UPDATED ---",
+      "--- 8's COUNTED ---"
+    ]
+  },
+  {
+    actionName: 'findAllNAndPop',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [],      [],
+      [Array], [],
+      [],      [Array],
+      []
+    ],
+    messages: [
+      "--- COUNTING 9's ---",
+      "--- NEW 9 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 9 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 9 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 9 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 9 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 9 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 9 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 9 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 9 FINDED, N's COUNT UPDATED ---",
+      "--- 9's COUNTED ---"
+    ]
+  },
+  {
+    actionName: 'solveN',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [],      [],
+      [Array], [],
+      [],      [Array],
+      []
+    ],
+    messages: [
+      "--->REPLACEMENT FOR: 1's @center: 1,1",
+      '--->POS REPLACED: 1,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,1',
+      "--->REPLACEMENT FOR: 1's @center: 1,4",
+      '--->POS REPLACED: 0,0',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,4',
+      "--->REPLACEMENT FOR: 1's @center: 7,4",
+      '--->POS REPLACED: 7,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,7',
+      "--->REPLACEMENT FOR: 1's @center: 4,7",
+      '--->POS REPLACED: 5,5',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,7',
+      "TESTING MORE REPLACEMENT FOR 1's"
+    ]
+  },
+  {
+    actionName: 'solveN',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [],      [],
+      [Array], [],
+      [],      [Array],
+      []
+    ],
+    messages: [
+      'NO REPLACEMENT POSSIBLE @AREA: 1,1',
+      "--->REPLACEMENT FOR: 1's @center: 4,1",
+      '--->POS REPLACED: 4,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,7',
+      "--->REPLACEMENT FOR: 1's @center: 7,7",
+      '--->POS REPLACED: 6,6',
+      "TESTING MORE REPLACEMENT FOR 1's"
+    ]
+  },
+  {
+    actionName: 'solveN',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [],      [],
+      [Array], [],
+      [],      [Array],
+      []
+    ],
+    messages: [
+      'NO REPLACEMENT POSSIBLE @AREA: 1,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,7',
+      "NO MORE REPLACEMENT POSSIBLE FOR 1's"
+    ]
+  },
+  {
+    actionName: 'solveN',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [],      [],
+      [Array], [],
+      [],      [Array],
+      []
+    ],
+    messages: [
+      "--->REPLACEMENT FOR: 2's @center: 1,1",
+      '--->POS REPLACED: 0,0',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,1',
+      "--->REPLACEMENT FOR: 2's @center: 1,4",
+      '--->POS REPLACED: 2,2',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,7',
+      "TESTING MORE REPLACEMENT FOR 2's"
+    ]
+  },
+  {
+    actionName: 'solveN',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [],      [],
+      [Array], [],
+      [],      [Array],
+      []
+    ],
+    messages: [
+      'NO REPLACEMENT POSSIBLE @AREA: 1,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,7',
+      "NO MORE REPLACEMENT POSSIBLE FOR 2's"
+    ]
+  },
+  {
+    actionName: 'solveN',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [],      [],
+      [Array], [],
+      [],      [Array],
+      []
+    ],
+    messages: [
+      'NO REPLACEMENT POSSIBLE @AREA: 1,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,7',
+      "NO MORE REPLACEMENT POSSIBLE FOR 2's"
+    ]
+  },
+  {
+    actionName: 'solveN',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [],      [],
+      [Array], [],
+      [],      [Array],
+      []
+    ],
+    messages: [
+      'NO REPLACEMENT POSSIBLE @AREA: 1,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,7',
+      "NO MORE REPLACEMENT POSSIBLE FOR 3's"
+    ]
+  },
+  {
+    actionName: 'solveN',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [],      [],
+      [Array], [],
+      [],      [Array],
+      []
+    ],
+    messages: [
+      'NO REPLACEMENT POSSIBLE @AREA: 1,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,7',
+      "NO MORE REPLACEMENT POSSIBLE FOR 4's"
+    ]
+  },
+  {
+    actionName: 'solveN',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [],      [],
+      [Array], [],
+      [],      [Array],
+      []
+    ],
+    messages: [
+      "--->REPLACEMENT FOR: 5's @center: 1,1",
+      '--->POS REPLACED: 1,1',
+      "--->REPLACEMENT FOR: 5's @center: 4,1",
+      '--->POS REPLACED: 5,5',
+      "--->REPLACEMENT FOR: 5's @center: 7,1",
+      '--->POS REPLACED: 8,8',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,4',
+      "--->REPLACEMENT FOR: 5's @center: 1,7",
+      '--->POS REPLACED: 2,2',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,7',
+      "TESTING MORE REPLACEMENT FOR 5's"
+    ]
+  },
+  {
+    actionName: 'solveN',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [],      [],
+      [Array], [],
+      [],      [Array],
+      []
+    ],
+    messages: [
+      'NO REPLACEMENT POSSIBLE @AREA: 1,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,4',
+      "--->REPLACEMENT FOR: 5's @center: 4,4",
+      '--->POS REPLACED: 3,3',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,7',
+      "--->REPLACEMENT FOR: 5's @center: 7,7",
+      '--->POS REPLACED: 7,7',
+      "TESTING MORE REPLACEMENT FOR 5's"
+    ]
+  },
+  {
+    actionName: 'solveN',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [],      [],
+      [Array], [],
+      [],      [Array],
+      []
+    ],
+    messages: [
+      'NO REPLACEMENT POSSIBLE @AREA: 1,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,7',
+      "NO MORE REPLACEMENT POSSIBLE FOR 5's"
+    ]
+  },
+  {
+    actionName: 'solveN',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [],      [],
+      [Array], [],
+      [],      [Array],
+      []
+    ],
+    messages: [
+      'NO REPLACEMENT POSSIBLE @AREA: 1,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,7',
+      "NO MORE REPLACEMENT POSSIBLE FOR 6's"
+    ]
+  },
+  {
+    actionName: 'solveN',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [],      [],
+      [Array], [],
+      [],      [Array],
+      []
+    ],
+    messages: [
+      'NO REPLACEMENT POSSIBLE @AREA: 1,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,7',
+      "NO MORE REPLACEMENT POSSIBLE FOR 7's"
+    ]
+  },
+  {
+    actionName: 'solveN',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [],      [],
+      [Array], [],
+      [],      [Array],
+      []
+    ],
+    messages: [
+      'NO REPLACEMENT POSSIBLE @AREA: 1,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,1',
+      "--->REPLACEMENT FOR: 8's @center: 1,4",
+      '--->POS REPLACED: 2,2',
+      "--->REPLACEMENT FOR: 8's @center: 4,4",
+      '--->POS REPLACED: 5,5',
+      "--->REPLACEMENT FOR: 8's @center: 7,4",
+      '--->POS REPLACED: 7,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,7',
+      "--->REPLACEMENT FOR: 8's @center: 4,7",
+      '--->POS REPLACED: 3,3',
+      "--->REPLACEMENT FOR: 8's @center: 7,7",
+      '--->POS REPLACED: 8,8',
+      "TESTING MORE REPLACEMENT FOR 8's"
+    ]
+  },
+  {
+    actionName: 'solveN',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [],      [],
+      [Array], [],
+      [],      [Array],
+      []
+    ],
+    messages: [
+      'NO REPLACEMENT POSSIBLE @AREA: 1,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,7',
+      "NO MORE REPLACEMENT POSSIBLE FOR 8's"
+    ]
+  },
+  {
+    actionName: 'solveN',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [],      [],
+      [Array], [],
+      [],      [Array],
+      []
+    ],
+    messages: [
+      'NO REPLACEMENT POSSIBLE @AREA: 1,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,7',
+      "NO MORE REPLACEMENT POSSIBLE FOR 8's"
+    ]
+  },
+  {
+    actionName: 'solveN',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [Array], [Array],
+      [],      [],
+      [Array], [],
+      [],      [Array],
+      []
+    ],
+    messages: [
+      'NO REPLACEMENT POSSIBLE @AREA: 1,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,1',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,4',
+      'NO REPLACEMENT POSSIBLE @AREA: 1,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 4,7',
+      'NO REPLACEMENT POSSIBLE @AREA: 7,7',
+      "NO MORE REPLACEMENT POSSIBLE FOR 9's"
+    ]
+  },
+  {
+    actionName: 'findAllNAndPop',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [],      [Array],
+      [],      [],
+      [Array], [],
+      [],      [Array],
+      []
+    ],
+    messages: [
+      "--- COUNTING 1's ---",
+      "--- NEW 1 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 1 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 1 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 1 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 1 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 1 FINDED, N's COUNT UPDATED ---",
+      "--- 1's COUNTED ---"
+    ]
+  },
+  {
+    actionName: 'findAllNAndPop',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [],      [],
+      [],      [],
+      [Array], [],
+      [],      [Array],
+      []
+    ],
+    messages: [
+      "--- COUNTING 2's ---",
+      "--- NEW 2 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 2 FINDED, N's COUNT UPDATED ---",
+      "--- 2's COUNTED ---"
+    ]
+  },
+  {
+    actionName: 'findAllNAndPop',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [],      [],
+      [],      [],
+      [Array], [],
+      [],      [Array],
+      []
+    ],
+    messages: [ "--- COUNTING 3's ---", "--- NEW 3's NOT FINDED ---" ]
+  },
+  {
+    actionName: 'findAllNAndPop',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [],      [],
+      [],      [],
+      [Array], [],
+      [],      [Array],
+      []
+    ],
+    messages: [ "--- COUNTING 4's ---", "--- NEW 4's NOT FINDED ---" ]
+  },
+  {
+    actionName: 'findAllNAndPop',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [ [], [], [], [], [], [], [], [Array], [] ],
+    messages: [
+      "--- COUNTING 5's ---",
+      "--- NEW 5 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 5 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 5 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 5 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 5 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 5 FINDED, N's COUNT UPDATED ---",
+      "--- 5's COUNTED ---"
+    ]
+  },
+  {
+    actionName: 'findAllNAndPop',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [ [], [], [], [], [], [], [], [Array], [] ],
+    messages: [ "--- COUNTING 6's ---", "--- NEW 6's NOT FINDED ---" ]
+  },
+  {
+    actionName: 'findAllNAndPop',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [ [], [], [], [], [], [], [], [Array], [] ],
+    messages: [ "--- COUNTING 7's ---", "--- NEW 7's NOT FINDED ---" ]
+  },
+  {
+    actionName: 'findAllNAndPop',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [], [], [], [], [],
+      [], [], [], []
+    ],
+    messages: [
+      "--- COUNTING 8's ---",
+      "--- NEW 8 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 8 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 8 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 8 FINDED, N's COUNT UPDATED ---",
+      "--- NEW 8 FINDED, N's COUNT UPDATED ---",
+      "--- 8's COUNTED ---"
+    ]
+  },
+  {
+    actionName: 'findAllNAndPop',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [], [], [], [], [],
+      [], [], [], []
+    ],
+    messages: [ "--- COUNTING 9's ---", "--- NEW 9's NOT FINDED ---" ]
+  },
+  {
+    actionName: 'solveAll',
+    sudoku: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    numbersCount: [
+      [], [], [], [], [],
+      [], [], [], []
+    ],
+    messages: [
+      '--- LUNCHING ENGINE ---',
+      '--- INITIAL STATE CLEANED ---',
+      '--- STARTING ---',
+      '### RUN NB: 1 ###',
+      "--- TRYING TO SOLVING: 1's ---",
+      "--- TRYING TO SOLVING: 2's ---",
+      "--- SOLVING: 2's ---",
+      "--- TRYING TO SOLVING: 3's ---",
+      "--- SOLVING: 3's ---",
+      "--- SOLVING: 3's ---",
+      "--- TRYING TO SOLVING: 4's ---",
+      "--- SOLVING: 4's ---",
+      "--- SOLVING: 4's ---",
+      "--- SOLVING: 4's ---",
+      "--- TRYING TO SOLVING: 5's ---",
+      "--- TRYING TO SOLVING: 6's ---",
+      "--- SOLVING: 6's ---",
+      "--- TRYING TO SOLVING: 7's ---",
+      "--- SOLVING: 7's ---",
+      "--- TRYING TO SOLVING: 8's ---",
+      "--- SOLVING: 8's ---",
+      "--- TRYING TO SOLVING: 9's ---",
+      "--- SOLVING: 9's ---",
+      "--- SOLVING: 9's ---",
+      '--- UPDATING GENERAL NUMBERS COUNT IF NEEDED ---',
+      '--- CHEKING THE UPDATE OF: 1  ---',
+      '--- CHEKING THE UPDATE OF: 2  ---',
+      '--- CHEKING THE UPDATE OF: 3  ---',
+      '--- CHEKING THE UPDATE OF: 4  ---',
+      '--- CHEKING THE UPDATE OF: 5  ---',
+      '--- CHEKING THE UPDATE OF: 6  ---',
+      '--- CHEKING THE UPDATE OF: 7  ---',
+      '--- CHEKING THE UPDATE OF: 8  ---',
+      '--- CHEKING THE UPDATE OF: 9  ---',
+      '### RUN NB: 2 ###',
+      "--- TRYING TO SOLVING: 1's ---",
+      "--- SOLVING: 1's ---",
+      "--- TRYING TO SOLVING: 2's ---",
+      "--- SOLVING: 2's ---",
+      "--- TRYING TO SOLVING: 3's ---",
+      "--- TRYING TO SOLVING: 4's ---",
+      "--- TRYING TO SOLVING: 5's ---",
+      "--- SOLVING: 5's ---",
+      "--- TRYING TO SOLVING: 6's ---",
+      "--- TRYING TO SOLVING: 7's ---",
+      "--- TRYING TO SOLVING: 8's ---",
+      "--- SOLVING: 8's ---",
+      "--- TRYING TO SOLVING: 9's ---",
+      '--- UPDATING GENERAL NUMBERS COUNT IF NEEDED ---',
+      '--- CHEKING THE UPDATE OF: 1  ---',
+      '--- CHEKING THE UPDATE OF: 2  ---',
+      '--- CHEKING THE UPDATE OF: 3  ---',
+      '--- CHEKING THE UPDATE OF: 4  ---',
+      '--- CHEKING THE UPDATE OF: 5  ---',
+      '--- CHEKING THE UPDATE OF: 6  ---',
+      '--- CHEKING THE UPDATE OF: 7  ---',
+      '--- CHEKING THE UPDATE OF: 8  ---',
+      '--- CHEKING THE UPDATE OF: 9  ---',
+      '---> NB OF TOTAL RUNS 3'
+    ]
+  }
+]

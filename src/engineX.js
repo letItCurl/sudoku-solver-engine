@@ -53,7 +53,8 @@ class Engine{
             msg.push(`NO MORE REPLACEMENT POSSIBLE FOR ${n}'s`)
             this.logs.push({
                 actionName: "solveN", 
-                sudoku: this.toolBox.returnData(this.sudoku.grid), 
+                sudoku: this.toolBox.returnData(this.sudoku.grid),
+                numbersCount:  this.toolBox.returnData(this.numbers), 
                 messages: msg})
             return true
         }else{
@@ -61,7 +62,7 @@ class Engine{
             this.logs.push({
                 actionName: "solveN", 
                 sudoku: this.toolBox.returnData(this.sudoku.grid),
-                //state:  this.toolBox.returnData(this.state),
+                numbersCount:  this.toolBox.returnData(this.numbers),
                 messages: msg})
             return false
         }
@@ -75,26 +76,29 @@ class Engine{
     }
     findAllNAndPop = function(n){
         //n goes from 1 to 9
-        var msg = {}
+        var msg = []
+        var count = 0
         msg.push(`--- COUNTING ${n}'s ---`)
         for(let scanX = 0; scanX<9 ; scanX++){
             for(let scanY = 0; scanY<9 ; scanY++){
                 if(this.sudoku.grid[scanY][scanX]===n){
-                    console.log(n+" finded".green)
-                    
                     if(!this.testPos(scanY,scanX)){
                         this.store.push([scanY,scanX])
                         this.numbers[n-1].pop()
-                    } 
+                        msg.push(`--- NEW ${n} FINDED, N's COUNT UPDATED ---`)
+                        count++
+                    }
                 }
             }
-        } 
+        }
+        (count === 0 ) ? msg.push(`--- NEW ${n}'s NOT FINDED ---`) : msg.push(`--- ${n}'s COUNTED ---`)
         this.logs.push({
             actionName: "findAllNAndPop", 
             sudoku: this.toolBox.returnData(this.sudoku.grid),
-            state:  this.toolBox.returnData(this.state), 
+            numbersCount:  this.toolBox.returnData(this.numbers), 
             messages: msg})
     }
+
     // THIS JUST CHECKS ! NOT GENERAL MODIFICATIONS !
     stopCondition = (numbers)=>{
         numbers = numbers.filter((val)=>{return val.length})
@@ -102,24 +106,35 @@ class Engine{
     }
     solveAll = function(){
         this.init()
-        var run = 0
-        console.log("STARTING THE LOOP".rainbow)
-        console.log(this.stopCondition(this.numbers))
+        var msg = []
+        msg.push(`--- LUNCHING ENGINE ---`)
+        msg.push(`--- INITIAL STATE CLEANED ---`)
+        msg.push(`--- STARTING ---`)
+        var run = 1
         while(this.stopCondition(this.numbers)){
-            console.log(`RUN NB:${run}`.bgMagenta)
+            msg.push(`### RUN NB: ${run} ###`)
             this.numbers.forEach((element,index) =>{
+                msg.push(`--- TRYING TO SOLVING: ${index+1}'s ---`)
                 while(!this.solveN(index+1)){
+                    msg.push(`--- SOLVING: ${index+1}'s ---`)
                     this.solveN(index+1)
                 }
             })
+            msg.push(`--- UPDATING GENERAL NUMBERS COUNT IF NEEDED ---`)
             this.numbers.forEach((element,index) =>{
+                msg.push(`--- CHEKING THE UPDATE OF: ${index+1}  ---`)
                 this.findAllNAndPop(index+1, this.numbers)
             })
             run ++
         }
-        console.log(this.numbers)
-        console.log(`Nb of Runs: ${run}`)
-        console.log("~~~~ DONE! ~~~~".rainbow)
+        msg.push(`---> NB OF TOTAL RUNS ${run}`)
+    
+        this.logs.push({
+            actionName: "solveAll", 
+            sudoku: this.toolBox.returnData(this.sudoku.grid),
+            numbersCount:  this.toolBox.returnData(this.numbers), 
+            messages: msg})
+        //this.toolBox.writeLogsToFile(this.logs, "RunTheTrap")
     }
     
 }
@@ -132,6 +147,7 @@ mySudok.displayGrid("Initial sudoku")
 myEngine = new Engine(mySudok, myTooBox)
 myEngine.solveAll()
 mySudok.displayGrid("Finished sudoku")
-console.log(myEngine.logs[6])
+console.log("here are the logs of the engine !")
+console.log(myEngine.logs)
 
 
