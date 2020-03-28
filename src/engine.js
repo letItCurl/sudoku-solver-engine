@@ -1,5 +1,4 @@
 const { testCol, testRow, testArea } = require('./rules');
-const _ = require('underscore')
 //small example of how we can add function to a class
 //Sudoku.prototype.testCol = testCol
 //Sudoku.prototype.testRow = testRow

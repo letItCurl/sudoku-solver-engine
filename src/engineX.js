@@ -1,15 +1,15 @@
-const { testCol, testRow, testArea } = require('./rules');
-const _ = require('underscore')
+//const { testCol, testRow, testArea } = require('./rules');
+
 //small example of how we can add function to a class
 //Sudoku.prototype.testCol = testCol
 //Sudoku.prototype.testRow = testRow
 //Sudoku.prototype.testArea = testArea
 //mySudok.tools = getRowFromToolBox.bind(mySudok); for mod one object
-
+/*
 const ToolBox = require('./toolBox')
 const {grid} = require('./sudokuData')
 const Sudoku = require('./sudoku')
-
+*/
 class Engine{
     constructor(sudoku, toolBox){
         this.numbers = [],
@@ -111,7 +111,7 @@ class Engine{
         msg.push(`--- INITIAL STATE CLEANED ---`)
         msg.push(`--- STARTING ---`)
         var run = 1
-        while(this.stopCondition(this.numbers)){
+        while(this.stopCondition(this.numbers) && run < 500){
             msg.push(`### RUN NB: ${run} ###`)
             this.numbers.forEach((element,index) =>{
                 msg.push(`--- TRYING TO SOLVING: ${index+1}'s ---`)
@@ -128,18 +128,22 @@ class Engine{
             run ++
         }
         msg.push(`---> NB OF TOTAL RUNS ${run}`)
-    
-        this.logs.push({
-            actionName: "solveAll", 
-            sudoku: this.toolBox.returnData(this.sudoku.grid),
-            numbersCount:  this.toolBox.returnData(this.numbers), 
-            messages: msg})
+        if(run===500){
+            this.logs = {error: "engine timeout, see docs..."}
+        }else{
+            this.logs.push({
+                actionName: "solveAll", 
+                sudoku: this.toolBox.returnData(this.sudoku.grid),
+                numbersCount:  this.toolBox.returnData(this.numbers), 
+                messages: msg})
+        }
+        
         //this.toolBox.writeLogsToFile(this.logs, "RunTheTrap")
     }
     
 }
 module.exports = Engine
-
+/*
 const myTooBox = new ToolBox()
 const mySudok = new Sudoku(grid)
 
@@ -149,5 +153,4 @@ myEngine.solveAll()
 mySudok.displayGrid("Finished sudoku")
 console.log("here are the logs of the engine !")
 console.log(myEngine.logs)
-
-
+*/
