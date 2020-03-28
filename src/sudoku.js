@@ -1,6 +1,8 @@
 const colors = require('colors')
 const {checkCol, checkRow, checkArea} = require('./rules')
 
+const {grid} = require('./sudokuData')
+
 class Sudoku{
 
     constructor(grid){
@@ -139,8 +141,49 @@ class Sudoku{
             }
         }
     }
+    checkInitialArea = function(x,y) {
+        const area = this.getArea(x,y)
+        return this.isMoreThanOne(area)
+
+    }
+    checkInitialRow = function(y) {
+        const row = this.getRow(y)
+        return this.isMoreThanOne(row)
+    }
+    checkInitialCol = function(x) {
+        const col = this.getCol(x)
+        return this.isMoreThanOne(col)
+    }
+    isMoreThanOne = function(arr) {
+        var numbersCount = [[],[],[],[],[],[],[],[],[]]
+        var validated = true
+        arr.forEach((el) => {
+            if(el!=0){numbersCount[el-1].push(el)}
+        });
+        numbersCount.forEach(el =>{
+            if(el.length > 1){validated = false}
+        })
+        if(validated){return true}else{return false}
+    }
+    checkInput = function(x,y) {
+        var msg = {erros: []}
+        if(!this.checkInitialArea(x,y)){msg.erros.push('doubles in the current area')}
+        if(!this.checkInitialRow(y)){msg.erros.push('doubles in the current row')}
+        if(!this.checkInitialCol(x)){msg.erros.push('doubles in the current colunm')}
+        if(msg.erros.length===0){return true}else{return msg}
+    }
 }
 
 module.exports = Sudoku
+/*
+const mySudok = new Sudoku(grid)
 
-//console.log(Sudoku)
+if(mySudok.checkInput(5,1)===true){
+    console.log("ALL FINE")
+}else{
+    var msg = mySudok.checkInput(1,1)
+    msg.erros.forEach(el=>{
+        console.log(el)
+    })
+}
+*/
