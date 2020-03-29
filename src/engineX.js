@@ -126,11 +126,13 @@ class Engine{
             run ++
         }
         this.logs.push(`---> NB OF TOTAL RUNS ${run}`)
+        
         if(run===50){
             this.logs = ['This sudoku is damned']
+            this.errors = ["//////////",'This sudoku is damned','See the docs to understand why', 'an assumption needs to be made or initial input incorrect',"//////////"]
             return false
         }else{
-            
+            return true
         }
         //this.toolBox.writeLogsToFile(this.logs, "RunTheTrap")
     }

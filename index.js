@@ -15,8 +15,10 @@ const Engine = require('./lib/engineX')
 const Sudoku = require('./lib/sudoku')
 const ToolBox = require('./lib/toolBox')
 const {grid} = require('./lib/sudokuData')
+const {gridClear} = require('./lib/sudokuDataClear')
 
 exports.grid = grid
+exports.gridClear = gridClear
 exports.Engine = Engine
 exports.ToolBox = ToolBox
 exports.Sudoku = Sudoku
