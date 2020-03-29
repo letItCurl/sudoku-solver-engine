@@ -129,7 +129,7 @@ class Engine{
         
         if(run===50){
             this.logs = ['This sudoku is damned']
-            this.errors = ["//////////",'This sudoku is damned','See the docs to understand why', 'an assumption needs to be made or initial input incorrect',"//////////"]
+            this.errors = ["//////////",'This sudoku is damned','See the docs to understand why', 'an assumption needs to be made or','initial input are incorrect',"//////////"]
             return false
         }else{
             return true
