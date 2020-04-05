@@ -1,5 +1,10 @@
 #  SUDOKU SOLVER ENGINE
 
-***Development paused***
+DEVELOPMENT DONE !
 
-***Front-end currently in development***
+This is Oriented Object model that solve sudokus.
+
+You can see it in action:
+https://sudoku-binchmarking.firebaseapp.com/
+
+Enjoy !
