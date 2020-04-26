@@ -200,11 +200,11 @@ myEngine = new Engine(mySudoku, myTooBox)
 </tr>
 </table>
 
-*** I know, this: new Engine(mySudoku, myTooBox) is not efficient. But this code was produce to explain to my students the concept of oop ***
+***I know, this: new Engine(mySudoku, myTooBox) is not efficient. But this code was produce to explain to my students the concept of oop***
 
 ## Example:
 
-- create a new file.
+- create a new directory.
 - cd inside
 - execute yarn init / npm init
 - install the sudoku-solver-engine
@@ -228,7 +228,7 @@ mySudoku.displayGrid("Finished sudoku")
 - execute: node testSudoku.js
 - enjoy :) !
 
-*** The sudoku grid is the same everywhere. They all share the same data ! ***
+***The sudoku grid is the same everywhere. They all share the same data !***
 
 # Technical stack
 - JS ES6
