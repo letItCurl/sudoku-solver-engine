@@ -1,6 +1,6 @@
 {
   "name": "sudoku-solver-engine",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Sudoku solver engine",
   "main": "index.js",
   "repository": "https://github.com/letItCurl/sudoku-solver-engine.git",
