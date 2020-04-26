@@ -29,7 +29,6 @@ class Sudoku{
     }
     console.log("+-----------+".red.bold)
     }
-
     displayRow = function(x){
         console.log(`row@${x}:`.red.bold)
         console.log(`${this.grid[x].join().replace(/,/g," ").yellow}`)
