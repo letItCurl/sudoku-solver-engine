@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "Sudoku solver engine",
   "main": "index.js",
-  "repository": "https://github.com/letItCurl/sudoku-solver-engine",
+  "repository": "https://github.com/letItCurl/sudoku-solver-engine.git",
   "author": "letItCurl <rolandlopez.developer@gmail.com>",
   "license": "MIT",
+  "keywords": ["sudoku engine","sudoku solver", "sudoku step by step"],
   "dependencies": {
     "@babel/polyfill": "^7.8.7",
     "colors": "^1.4.0",
