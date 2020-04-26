@@ -16,9 +16,9 @@
 ## installation:
 cd into your project and execute:
 ```
-npm i sudoku-engine-solver
+npm i sudoku-solver-engine
 //or with yarn
-yarn add sudoku-engine-solver
+yarn add sudoku-solver-engine
 ```
 ## Intro:
 This is a node_module that can solve a sudoku step by step and produce a full log of how the code solve the problem. 
@@ -206,19 +206,20 @@ myEngine = new Engine(mySudoku, myTooBox)
 - create a testSudoku.js file and write inside:
 
 ```
-import {ToolBox, Sudoku, grid} from 'sudoku-solver-engine'
-
+const {Engine, ToolBox, Sudoku, grid} = require('sudoku-solver-engine')
+// or in a front-end framework: import {Engine, ToolBox, Sudoku, grid from 'sudoku-solver-engine'
 const myTooBox = new ToolBox()
 const mySudoku = new Sudoku(grid)
 
 mySudoku.displayGrid("Initial sudoku")
-myEngine = new Engine(mySudoku, myTooBox)
+const myEngine = new Engine(mySudoku, myTooBox)
 myEngine.solveAll()
 
 console.log("testSolveAll")
 console.log(myEngine.logs.length)
 console.log(myEngine.logs)
 mySudoku.displayGrid("Finished sudoku")
+
 ```
 - execute: node testSudoku.js
 - enjoy :) !
