@@ -8,13 +8,8 @@
 
 - Solve any valid sudoku.
 - Detect invalid sudokus.
-- Check inputs while they are puted in the grid.
 - 5 preset of sudokus.
-- CLI in the browser.
-- Fully responsive.
 - Logs are directly connected to the program status.
-- The log stream doesn't lock the navigation of the app.
-- When the engine is solving, all API inputs are locked.
 
 # How to use this ? [![](https://img.shields.io/badge/version-1.0.0-green.svg)](https://www.npmjs.com/package/sudoku-solver-engine)
 
@@ -229,6 +224,11 @@ mySudoku.displayGrid("Finished sudoku")
 - enjoy :) !
 
 ***The sudoku grid is the same everywhere. They all share the same data !***
+
+# Important
+Some Sudokus cannot be solved with this algorithm. Those Sudokus need an assumption to continue the resolution.
+
+But the algorithm is able to detect when an assumption needs to be made, so, you could work on the version 2 of this code that would be able to solve those Sudokus ;)!
 
 # Technical stack
 - JS ES6
