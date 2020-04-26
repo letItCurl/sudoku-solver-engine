@@ -11,7 +11,7 @@
 - 5 preset of sudokus.
 - Logs are directly connected to the program status.
 
-# How to use this ? [![](https://img.shields.io/badge/version-1.0.0-green.svg)](https://www.npmjs.com/package/sudoku-solver-engine)
+# How to use this ? [![](https://img.shields.io/badge/version-1.0.1-green.svg)](https://www.npmjs.com/package/sudoku-solver-engine)
 
 ## installation:
 cd into your project and execute:
