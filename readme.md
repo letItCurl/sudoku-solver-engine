@@ -11,7 +11,7 @@
 - 5 preset of sudokus.
 - Logs are directly connected to the program status.
 
-# How to use this ? [![](https://img.shields.io/badge/version-1.0.1-green.svg)](https://www.npmjs.com/package/sudoku-solver-engine)
+# How to use this ? [![](https://img.shields.io/badge/version-1.0.2-green.svg)](https://www.npmjs.com/package/sudoku-solver-engine)
 
 ## installation:
 cd into your project and execute:
@@ -207,7 +207,7 @@ myEngine = new Engine(mySudoku, myTooBox)
 
 ```
 const {Engine, ToolBox, Sudoku, grid} = require('sudoku-solver-engine')
-// or in a front-end framework: import {Engine, ToolBox, Sudoku, grid from 'sudoku-solver-engine'
+// or in a front-end framework: import {Engine, ToolBox, Sudoku, grid } from 'sudoku-solver-engine'
 const myTooBox = new ToolBox()
 const mySudoku = new Sudoku(grid)
 
